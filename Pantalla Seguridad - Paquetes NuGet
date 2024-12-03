@@ -1,0 +1,3 @@
+Para abrir la cámara en la pantalla de Seguridad, se deben instalar los siguientes paquetes NuGet:
+1) AForge.Video 
+2) AForge.Video.DirectShow
