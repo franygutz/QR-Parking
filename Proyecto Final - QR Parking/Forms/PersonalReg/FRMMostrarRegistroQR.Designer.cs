@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMMostrarRegistroQR));
 			this.bExportar = new System.Windows.Forms.Button();
 			this.lQrGenerado = new System.Windows.Forms.Label();
 			this.pbCodigoQR = new System.Windows.Forms.PictureBox();
@@ -47,21 +46,20 @@
 			this.lApellidosAg = new System.Windows.Forms.Label();
 			this.lNombresAg = new System.Windows.Forms.Label();
 			this.panelArribaSignInPerReg = new System.Windows.Forms.Panel();
-			this.pbLogoQRParking = new System.Windows.Forms.PictureBox();
 			this.lAgregarRegistro = new System.Windows.Forms.Label();
 			this.panelAbajoSignInPerReg = new System.Windows.Forms.Panel();
 			((System.ComponentModel.ISupportInitialize)(this.pbCodigoQR)).BeginInit();
 			this.panelArribaSignInPerReg.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbLogoQRParking)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// bExportar
 			// 
 			this.bExportar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.bExportar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bExportar.Location = new System.Drawing.Point(524, 300);
+			this.bExportar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+			this.bExportar.Location = new System.Drawing.Point(649, 58);
+			this.bExportar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.bExportar.Name = "bExportar";
-			this.bExportar.Size = new System.Drawing.Size(124, 27);
+			this.bExportar.Size = new System.Drawing.Size(145, 35);
 			this.bExportar.TabIndex = 118;
 			this.bExportar.Text = "Exportar";
 			this.bExportar.UseVisualStyleBackColor = true;
@@ -70,36 +68,41 @@
 			// lQrGenerado
 			// 
 			this.lQrGenerado.AutoSize = true;
-			this.lQrGenerado.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lQrGenerado.Location = new System.Drawing.Point(419, 41);
+			this.lQrGenerado.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
+			this.lQrGenerado.Location = new System.Drawing.Point(398, 57);
+			this.lQrGenerado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lQrGenerado.Name = "lQrGenerado";
-			this.lQrGenerado.Size = new System.Drawing.Size(180, 37);
+			this.lQrGenerado.Size = new System.Drawing.Size(147, 30);
 			this.lQrGenerado.TabIndex = 116;
 			this.lQrGenerado.Text = "QR Generado";
 			// 
 			// pbCodigoQR
 			// 
-			this.pbCodigoQR.Location = new System.Drawing.Point(426, 81);
+			this.pbCodigoQR.Location = new System.Drawing.Point(403, 95);
+			this.pbCodigoQR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.pbCodigoQR.Name = "pbCodigoQR";
-			this.pbCodigoQR.Size = new System.Drawing.Size(222, 200);
+			this.pbCodigoQR.Size = new System.Drawing.Size(391, 349);
 			this.pbCodigoQR.TabIndex = 115;
 			this.pbCodigoQR.TabStop = false;
 			// 
 			// panelSeparador
 			// 
 			this.panelSeparador.BackColor = System.Drawing.Color.MediumTurquoise;
-			this.panelSeparador.Location = new System.Drawing.Point(368, 38);
+			this.panelSeparador.Location = new System.Drawing.Point(369, 37);
+			this.panelSeparador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.panelSeparador.Name = "panelSeparador";
-			this.panelSeparador.Size = new System.Drawing.Size(10, 323);
+			this.panelSeparador.Size = new System.Drawing.Size(16, 429);
 			this.panelSeparador.TabIndex = 114;
 			// 
 			// bVolverSignInPerReg
 			// 
 			this.bVolverSignInPerReg.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bVolverSignInPerReg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bVolverSignInPerReg.Location = new System.Drawing.Point(29, 300);
+			this.bVolverSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+			this.bVolverSignInPerReg.Location = new System.Drawing.Point(13, 409);
+			this.bVolverSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.bVolverSignInPerReg.Name = "bVolverSignInPerReg";
-			this.bVolverSignInPerReg.Size = new System.Drawing.Size(93, 27);
+			this.bVolverSignInPerReg.Size = new System.Drawing.Size(108, 35);
 			this.bVolverSignInPerReg.TabIndex = 99;
 			this.bVolverSignInPerReg.Text = "Volver";
 			this.bVolverSignInPerReg.UseVisualStyleBackColor = true;
@@ -109,7 +112,8 @@
 			// 
 			this.lFechaAg.AutoSize = true;
 			this.lFechaAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lFechaAg.Location = new System.Drawing.Point(26, 259);
+			this.lFechaAg.Location = new System.Drawing.Point(75, 349);
+			this.lFechaAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lFechaAg.Name = "lFechaAg";
 			this.lFechaAg.Size = new System.Drawing.Size(46, 17);
 			this.lFechaAg.TabIndex = 113;
@@ -118,11 +122,12 @@
 			// dtpFechaAg
 			// 
 			this.dtpFechaAg.Enabled = false;
-			this.dtpFechaAg.Location = new System.Drawing.Point(151, 259);
+			this.dtpFechaAg.Location = new System.Drawing.Point(134, 349);
+			this.dtpFechaAg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.dtpFechaAg.MaxDate = new System.DateTime(2111, 1, 10, 0, 0, 0, 0);
 			this.dtpFechaAg.MinDate = new System.DateTime(2024, 12, 1, 0, 0, 0, 0);
 			this.dtpFechaAg.Name = "dtpFechaAg";
-			this.dtpFechaAg.Size = new System.Drawing.Size(187, 20);
+			this.dtpFechaAg.Size = new System.Drawing.Size(218, 25);
 			this.dtpFechaAg.TabIndex = 112;
 			this.dtpFechaAg.Value = new System.DateTime(2024, 12, 3, 20, 11, 30, 0);
 			// 
@@ -133,19 +138,21 @@
 			this.cbTipoAg.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.cbTipoAg.FormattingEnabled = true;
 			this.cbTipoAg.Items.AddRange(new object[] {
-			"Visitante",
-			"Colaborador",
-			"Estudiante"});
-			this.cbTipoAg.Location = new System.Drawing.Point(151, 219);
+            "Visitante",
+            "Colaborador",
+            "Estudiante"});
+			this.cbTipoAg.Location = new System.Drawing.Point(134, 299);
+			this.cbTipoAg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.cbTipoAg.Name = "cbTipoAg";
-			this.cbTipoAg.Size = new System.Drawing.Size(187, 21);
+			this.cbTipoAg.Size = new System.Drawing.Size(218, 25);
 			this.cbTipoAg.TabIndex = 111;
 			// 
 			// lTipoAg
 			// 
 			this.lTipoAg.AutoSize = true;
 			this.lTipoAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lTipoAg.Location = new System.Drawing.Point(26, 219);
+			this.lTipoAg.Location = new System.Drawing.Point(84, 299);
+			this.lTipoAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lTipoAg.Name = "lTipoAg";
 			this.lTipoAg.Size = new System.Drawing.Size(37, 17);
 			this.lTipoAg.TabIndex = 110;
@@ -155,45 +162,50 @@
 			// 
 			this.tbPlacaAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbPlacaAg.Enabled = false;
-			this.tbPlacaAg.Location = new System.Drawing.Point(151, 182);
+			this.tbPlacaAg.Location = new System.Drawing.Point(134, 251);
+			this.tbPlacaAg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tbPlacaAg.MaxLength = 8;
 			this.tbPlacaAg.Name = "tbPlacaAg";
-			this.tbPlacaAg.Size = new System.Drawing.Size(187, 20);
+			this.tbPlacaAg.Size = new System.Drawing.Size(218, 25);
 			this.tbPlacaAg.TabIndex = 105;
 			// 
 			// mtbCedulaAg
 			// 
 			this.mtbCedulaAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.mtbCedulaAg.Enabled = false;
-			this.mtbCedulaAg.Location = new System.Drawing.Point(151, 146);
+			this.mtbCedulaAg.Location = new System.Drawing.Point(134, 204);
+			this.mtbCedulaAg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.mtbCedulaAg.Mask = "000-000000-0000L";
 			this.mtbCedulaAg.Name = "mtbCedulaAg";
-			this.mtbCedulaAg.Size = new System.Drawing.Size(187, 20);
+			this.mtbCedulaAg.Size = new System.Drawing.Size(218, 25);
 			this.mtbCedulaAg.TabIndex = 104;
 			// 
 			// tbApellidosAg
 			// 
 			this.tbApellidosAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbApellidosAg.Enabled = false;
-			this.tbApellidosAg.Location = new System.Drawing.Point(151, 111);
+			this.tbApellidosAg.Location = new System.Drawing.Point(134, 158);
+			this.tbApellidosAg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tbApellidosAg.Name = "tbApellidosAg";
-			this.tbApellidosAg.Size = new System.Drawing.Size(187, 20);
+			this.tbApellidosAg.Size = new System.Drawing.Size(218, 25);
 			this.tbApellidosAg.TabIndex = 103;
 			// 
 			// tbNombresAg
 			// 
 			this.tbNombresAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbNombresAg.Enabled = false;
-			this.tbNombresAg.Location = new System.Drawing.Point(151, 69);
+			this.tbNombresAg.Location = new System.Drawing.Point(134, 110);
+			this.tbNombresAg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tbNombresAg.Name = "tbNombresAg";
-			this.tbNombresAg.Size = new System.Drawing.Size(187, 20);
+			this.tbNombresAg.Size = new System.Drawing.Size(218, 25);
 			this.tbNombresAg.TabIndex = 102;
 			// 
 			// lPlaca
 			// 
 			this.lPlaca.AutoSize = true;
 			this.lPlaca.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lPlaca.Location = new System.Drawing.Point(26, 182);
+			this.lPlaca.Location = new System.Drawing.Point(84, 251);
+			this.lPlaca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lPlaca.Name = "lPlaca";
 			this.lPlaca.Size = new System.Drawing.Size(42, 17);
 			this.lPlaca.TabIndex = 109;
@@ -203,7 +215,8 @@
 			// 
 			this.lCedulaAg.AutoSize = true;
 			this.lCedulaAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lCedulaAg.Location = new System.Drawing.Point(26, 146);
+			this.lCedulaAg.Location = new System.Drawing.Point(74, 204);
+			this.lCedulaAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lCedulaAg.Name = "lCedulaAg";
 			this.lCedulaAg.Size = new System.Drawing.Size(52, 17);
 			this.lCedulaAg.TabIndex = 108;
@@ -213,7 +226,8 @@
 			// 
 			this.lApellidosAg.AutoSize = true;
 			this.lApellidosAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lApellidosAg.Location = new System.Drawing.Point(26, 107);
+			this.lApellidosAg.Location = new System.Drawing.Point(60, 158);
+			this.lApellidosAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lApellidosAg.Name = "lApellidosAg";
 			this.lApellidosAg.Size = new System.Drawing.Size(66, 17);
 			this.lApellidosAg.TabIndex = 107;
@@ -223,7 +237,8 @@
 			// 
 			this.lNombresAg.AutoSize = true;
 			this.lNombresAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lNombresAg.Location = new System.Drawing.Point(26, 69);
+			this.lNombresAg.Location = new System.Drawing.Point(55, 110);
+			this.lNombresAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lNombresAg.Name = "lNombresAg";
 			this.lNombresAg.Size = new System.Drawing.Size(71, 17);
 			this.lNombresAg.TabIndex = 106;
@@ -232,51 +247,43 @@
 			// panelArribaSignInPerReg
 			// 
 			this.panelArribaSignInPerReg.BackColor = System.Drawing.Color.MediumTurquoise;
-			this.panelArribaSignInPerReg.Controls.Add(this.pbLogoQRParking);
 			this.panelArribaSignInPerReg.Controls.Add(this.lAgregarRegistro);
-			this.panelArribaSignInPerReg.Location = new System.Drawing.Point(-8, -1);
+			this.panelArribaSignInPerReg.Location = new System.Drawing.Point(-9, -1);
+			this.panelArribaSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.panelArribaSignInPerReg.Name = "panelArribaSignInPerReg";
-			this.panelArribaSignInPerReg.Size = new System.Drawing.Size(708, 39);
+			this.panelArribaSignInPerReg.Size = new System.Drawing.Size(826, 51);
 			this.panelArribaSignInPerReg.TabIndex = 101;
-			// 
-			// pbLogoQRParking
-			// 
-			this.pbLogoQRParking.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoQRParking.Image")));
-			this.pbLogoQRParking.Location = new System.Drawing.Point(12, -1);
-			this.pbLogoQRParking.Name = "pbLogoQRParking";
-			this.pbLogoQRParking.Size = new System.Drawing.Size(77, 38);
-			this.pbLogoQRParking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pbLogoQRParking.TabIndex = 7;
-			this.pbLogoQRParking.TabStop = false;
 			// 
 			// lAgregarRegistro
 			// 
 			this.lAgregarRegistro.AutoSize = true;
-			this.lAgregarRegistro.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lAgregarRegistro.Location = new System.Drawing.Point(86, -1);
+			this.lAgregarRegistro.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+			this.lAgregarRegistro.Location = new System.Drawing.Point(57, 10);
+			this.lAgregarRegistro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lAgregarRegistro.Name = "lAgregarRegistro";
-			this.lAgregarRegistro.Size = new System.Drawing.Size(199, 37);
+			this.lAgregarRegistro.Size = new System.Drawing.Size(177, 32);
 			this.lAgregarRegistro.TabIndex = 8;
 			this.lAgregarRegistro.Text = "Registro de QR";
 			// 
 			// panelAbajoSignInPerReg
 			// 
 			this.panelAbajoSignInPerReg.BackColor = System.Drawing.Color.MediumTurquoise;
-			this.panelAbajoSignInPerReg.Location = new System.Drawing.Point(-8, 346);
+			this.panelAbajoSignInPerReg.Location = new System.Drawing.Point(-9, 452);
+			this.panelAbajoSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.panelAbajoSignInPerReg.Name = "panelAbajoSignInPerReg";
-			this.panelAbajoSignInPerReg.Size = new System.Drawing.Size(708, 43);
+			this.panelAbajoSignInPerReg.Size = new System.Drawing.Size(826, 56);
 			this.panelAbajoSignInPerReg.TabIndex = 100;
 			// 
 			// FRMMostrarRegistroQR
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(692, 388);
+			this.ClientSize = new System.Drawing.Size(807, 507);
+			this.Controls.Add(this.panelSeparador);
+			this.Controls.Add(this.pbCodigoQR);
 			this.Controls.Add(this.bExportar);
 			this.Controls.Add(this.lQrGenerado);
-			this.Controls.Add(this.pbCodigoQR);
-			this.Controls.Add(this.panelSeparador);
 			this.Controls.Add(this.bVolverSignInPerReg);
 			this.Controls.Add(this.lFechaAg);
 			this.Controls.Add(this.dtpFechaAg);
@@ -292,7 +299,9 @@
 			this.Controls.Add(this.lNombresAg);
 			this.Controls.Add(this.panelArribaSignInPerReg);
 			this.Controls.Add(this.panelAbajoSignInPerReg);
+			this.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "FRMMostrarRegistroQR";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FRMMostrarRegistroQR";
@@ -300,7 +309,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbCodigoQR)).EndInit();
 			this.panelArribaSignInPerReg.ResumeLayout(false);
 			this.panelArribaSignInPerReg.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pbLogoQRParking)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -325,7 +333,6 @@
 		private System.Windows.Forms.Label lApellidosAg;
 		private System.Windows.Forms.Label lNombresAg;
 		private System.Windows.Forms.Panel panelArribaSignInPerReg;
-		private System.Windows.Forms.PictureBox pbLogoQRParking;
 		private System.Windows.Forms.Label lAgregarRegistro;
 		private System.Windows.Forms.Panel panelAbajoSignInPerReg;
 	}

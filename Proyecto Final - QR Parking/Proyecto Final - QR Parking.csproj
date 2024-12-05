@@ -220,10 +220,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\logo.jpg" />
-    <Content Include="assets\sobre-nosotros.png" />
-    <Content Include="assets\uam.jpg" />
-    <Content Include="assets\uam2.jpg" />
+    <Content Include="Assets\logo.jpg" />
+    <Content Include="Assets\sobre-nosotros.png" />
+    <Content Include="Assets\uam.jpg" />
+    <Content Include="Assets\uam2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -85,22 +85,23 @@
 			this.lIndicacion.BackColor = System.Drawing.Color.White;
 			this.lIndicacion.Cursor = System.Windows.Forms.Cursors.SizeAll;
 			this.lIndicacion.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.lIndicacion.Location = new System.Drawing.Point(120, 202);
+			this.lIndicacion.Location = new System.Drawing.Point(120, 204);
 			this.lIndicacion.Name = "lIndicacion";
 			this.lIndicacion.Size = new System.Drawing.Size(395, 94);
 			this.lIndicacion.TabIndex = 15;
 			this.lIndicacion.Text = "Esta opción le permite recuperar su contraseña, enviando un código de acceso a la" +
-	" dirección de correo electrónico asociada al usuario ingresado. Su contaseña es " +
-	"el código enviado.";
+    " dirección de correo electrónico asociada al usuario ingresado. Su contaseña es " +
+    "el código enviado.";
 			this.lIndicacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// tbUsuarioCO
 			// 
 			this.tbUsuarioCO.AcceptsTab = true;
 			this.tbUsuarioCO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.tbUsuarioCO.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.tbUsuarioCO.Location = new System.Drawing.Point(198, 179);
 			this.tbUsuarioCO.Name = "tbUsuarioCO";
-			this.tbUsuarioCO.Size = new System.Drawing.Size(258, 20);
+			this.tbUsuarioCO.Size = new System.Drawing.Size(258, 25);
 			this.tbUsuarioCO.TabIndex = 13;
 			// 
 			// lCorreoCO

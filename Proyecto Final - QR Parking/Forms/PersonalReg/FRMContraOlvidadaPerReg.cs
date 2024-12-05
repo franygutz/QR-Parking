@@ -6,52 +6,59 @@ using Proyecto_Final___QR_Parking.Clases.Tablas;
 
 namespace Proyecto_Final___QR_Parking.PersonalReg
 {
-    public partial class FRMContraOlvidadaPerReg : Form
-    {
-        private static FRMContraOlvidadaPerReg instancia;
-        private TablaPersonalRegistro tabla_RPersonalReg = TablaPersonalRegistro.GetInstancia();
+	public partial class FRMContraOlvidadaPerReg : Form
+	{
+		private static FRMContraOlvidadaPerReg instancia;
+		private TablaPersonalRegistro tabla_RPersonalReg = TablaPersonalRegistro.GetInstancia();
 
-        public FRMContraOlvidadaPerReg()
-        {
-            InitializeComponent();
-        }
+		public FRMContraOlvidadaPerReg()
+		{
+			InitializeComponent();
+		}
 
-        public static FRMContraOlvidadaPerReg GetInstancia()
-        {
-            if (instancia == null || instancia.IsDisposed)
-            {
-                instancia = new FRMContraOlvidadaPerReg();
-            }
-            return instancia;
-        }
+		public static FRMContraOlvidadaPerReg GetInstancia()
+		{
+			if (instancia == null || instancia.IsDisposed)
+				instancia = new FRMContraOlvidadaPerReg();
 
-        private void bIrGmail_Click(object sender, EventArgs e)
-        {
-            string url;
-            url = "https://workspace.google.com/intl/es/gmail/";
-            System.Diagnostics.Process.Start(url);
-        }
+			return instancia;
+		}
 
-        private void bVolver_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            FRMLogInPersonalReg frmInicioSesionPerReg = FRMLogInPersonalReg.GetInstancia();
-            frmInicioSesionPerReg.Show();
-        }
+		private void bIrGmail_Click(object sender, EventArgs e)
+		{
+			string url = "https://mail.google.com/mail/";
+			System.Diagnostics.Process.Start(url);
+		}
 
-        private void bAceptar_Click(object sender, EventArgs e)
-        {
-            string correoElec = this.tbUsuarioCO.Text;
+		private void bVolver_Click(object sender, EventArgs e)
+		{
+		   Close();
+			FRMLogInPersonalReg frmInicioSesionPerReg = FRMLogInPersonalReg.GetInstancia();
+			frmInicioSesionPerReg.Show();
+		}
 
-            if (tabla_RPersonalReg.VerificarExistenciaCorreo(correoElec))
-            {
-                MessageBox.Show("Se ha enviado un email con tu nueva contraseña.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tbUsuarioCO.Clear();
-            }
-            else
-            {
-                MessageBox.Show("Correo no encontrado.", "Error de Autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-    }
+		private void bAceptar_Click(object sender, EventArgs e)
+		{
+			if (!tabla_RPersonalReg.VerificarExistenciaCorreo(tbUsuarioCO.Text))
+			{
+				MessageBox.Show(
+					"¡Correo no encontrado!",
+					"Error de Autenticación",
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Error
+				);
+
+				return;
+			}
+
+			MessageBox.Show(
+				"Se ha enviado un email con su nueva contraseña.",
+				"Éxito",
+				MessageBoxButtons.OK,
+				MessageBoxIcon.Information
+			);
+
+			tbUsuarioCO.Clear();
+		}
+	}
 }

@@ -37,23 +37,7 @@ namespace Proyecto_Final___QR_Parking.Seguridad
 			string correo = tbCorreoLogInSeg.Text;
 			string contra = mtbContraLogInSeg.Text;
 
-			if (tabla_RSeguridad.AutenticarUsuario(correo, contra))
-			{
-				MessageBox.Show(
-					"¡Inicio de sesión exitoso!",
-					"Éxito",
-					MessageBoxButtons.OK,
-					MessageBoxIcon.Information
-				);
-
-				mtbContraLogInSeg.Clear();
-				tbCorreoLogInSeg.Clear();
-				FRMSeguridadHub hubSeguridad = FRMSeguridadHub.GetInstancia();
-				hubSeguridad.Show();
-				Close();
-			}
-
-			else
+			if (!tabla_RSeguridad.AutenticarUsuario(correo, contra))
 			{
 				MessageBox.Show(
 					"¡Correo o contraseña incorrect@!",
@@ -61,7 +45,22 @@ namespace Proyecto_Final___QR_Parking.Seguridad
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error
 				);
+
+				return;
 			}
+						
+			MessageBox.Show(
+				"¡Inicio de sesión exitoso!",
+				"Éxito",
+				MessageBoxButtons.OK,
+				MessageBoxIcon.Information
+			);
+
+			mtbContraLogInSeg.Clear();
+			tbCorreoLogInSeg.Clear();
+			FRMSeguridadHub hubSeguridad = FRMSeguridadHub.GetInstancia();
+			hubSeguridad.Show();
+			Close();
 		}
 
 		private void bVolverLogInSeg_Click(object sender, EventArgs e)

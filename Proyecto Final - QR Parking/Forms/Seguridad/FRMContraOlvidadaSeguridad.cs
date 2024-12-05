@@ -24,6 +24,19 @@ namespace Proyecto_Final___QR_Parking.Seguridad
 			return instancia;
 		}
 
+		private void bIrGmail_Click(object sender, EventArgs e)
+		{
+			string url = "https://mail.google.com/mail/";
+			System.Diagnostics.Process.Start(url);
+		}
+
+		private void bVolver_Click(object sender, EventArgs e)
+		{
+			Close();
+			FRMLogInSeguridad frmInicioSesionSeguridad = FRMLogInSeguridad.GetInstancia();
+			frmInicioSesionSeguridad.Show();
+		}
+
 		private void bAceptar_Click(object sender, EventArgs e)
 		{
 			string correoElec = tbUsuarioCO.Text;
@@ -49,19 +62,6 @@ namespace Proyecto_Final___QR_Parking.Seguridad
 					MessageBoxIcon.Error
 				);
 			}
-		}
-
-		private void bVolver_Click(object sender, EventArgs e)
-		{
-			Close();
-			FRMLogInSeguridad frmInicioSesionSeguridad = FRMLogInSeguridad.GetInstancia();
-			frmInicioSesionSeguridad.Show();
-		}
-
-		private void bIrGmail_Click(object sender, EventArgs e)
-		{
-			string url = "https://mail.google.com/mail/";
-			System.Diagnostics.Process.Start(url);
 		}
 	}
 }

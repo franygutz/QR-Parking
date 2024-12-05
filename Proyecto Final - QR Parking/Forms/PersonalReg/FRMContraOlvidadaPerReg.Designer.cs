@@ -51,17 +51,17 @@
 			this.panelContraolvidSeg.Controls.Add(this.lIndicacion);
 			this.panelContraolvidSeg.Controls.Add(this.tbUsuarioCO);
 			this.panelContraolvidSeg.Controls.Add(this.lCorreoCO);
-			this.panelContraolvidSeg.Location = new System.Drawing.Point(225, 85);
+			this.panelContraolvidSeg.Location = new System.Drawing.Point(41, 31);
 			this.panelContraolvidSeg.Name = "panelContraolvidSeg";
-			this.panelContraolvidSeg.Size = new System.Drawing.Size(271, 256);
+			this.panelContraolvidSeg.Size = new System.Drawing.Size(638, 365);
 			this.panelContraolvidSeg.TabIndex = 20;
 			// 
 			// pbLogoQRLogInSeg
 			// 
 			this.pbLogoQRLogInSeg.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoQRLogInSeg.Image")));
-			this.pbLogoQRLogInSeg.Location = new System.Drawing.Point(32, 10);
+			this.pbLogoQRLogInSeg.Location = new System.Drawing.Point(198, 25);
 			this.pbLogoQRLogInSeg.Name = "pbLogoQRLogInSeg";
-			this.pbLogoQRLogInSeg.Size = new System.Drawing.Size(206, 72);
+			this.pbLogoQRLogInSeg.Size = new System.Drawing.Size(258, 90);
 			this.pbLogoQRLogInSeg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pbLogoQRLogInSeg.TabIndex = 59;
 			this.pbLogoQRLogInSeg.TabStop = false;
@@ -70,71 +70,73 @@
 			// 
 			this.bAceptar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bAceptar.Location = new System.Drawing.Point(105, 214);
+			this.bAceptar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+			this.bAceptar.Location = new System.Drawing.Point(256, 299);
 			this.bAceptar.Name = "bAceptar";
-			this.bAceptar.Size = new System.Drawing.Size(61, 23);
+			this.bAceptar.Size = new System.Drawing.Size(123, 50);
 			this.bAceptar.TabIndex = 18;
 			this.bAceptar.Text = "Aceptar";
 			this.bAceptar.UseVisualStyleBackColor = true;
-			this.bAceptar.Click += new System.EventHandler(this.bAceptar_Click);
 			// 
 			// bIrGmail
 			// 
 			this.bIrGmail.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bIrGmail.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bIrGmail.Location = new System.Drawing.Point(172, 214);
+			this.bIrGmail.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+			this.bIrGmail.Location = new System.Drawing.Point(498, 299);
 			this.bIrGmail.Name = "bIrGmail";
-			this.bIrGmail.Size = new System.Drawing.Size(61, 23);
+			this.bIrGmail.Size = new System.Drawing.Size(123, 50);
 			this.bIrGmail.TabIndex = 17;
 			this.bIrGmail.Text = "Ir a Gmail";
 			this.bIrGmail.UseVisualStyleBackColor = true;
-			this.bIrGmail.Click += new System.EventHandler(this.bIrGmail_Click);
 			// 
 			// bVolver
 			// 
 			this.bVolver.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bVolver.Location = new System.Drawing.Point(35, 214);
+			this.bVolver.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+			this.bVolver.Location = new System.Drawing.Point(18, 299);
 			this.bVolver.Name = "bVolver";
-			this.bVolver.Size = new System.Drawing.Size(61, 23);
+			this.bVolver.Size = new System.Drawing.Size(123, 50);
 			this.bVolver.TabIndex = 16;
 			this.bVolver.Text = "Volver";
 			this.bVolver.UseVisualStyleBackColor = true;
-			this.bVolver.Click += new System.EventHandler(this.bVolver_Click);
 			// 
 			// lIndicacion
 			// 
 			this.lIndicacion.BackColor = System.Drawing.Color.White;
 			this.lIndicacion.Cursor = System.Windows.Forms.Cursors.SizeAll;
-			this.lIndicacion.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lIndicacion.Location = new System.Drawing.Point(30, 136);
+			this.lIndicacion.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.lIndicacion.Location = new System.Drawing.Point(120, 204);
 			this.lIndicacion.Name = "lIndicacion";
-			this.lIndicacion.Size = new System.Drawing.Size(216, 62);
+			this.lIndicacion.Size = new System.Drawing.Size(395, 94);
 			this.lIndicacion.TabIndex = 15;
 			this.lIndicacion.Text = "Esta opción le permite recuperar su contraseña, enviando un código de acceso a la" +
-	" dirección de correo electrónico asociada al usuario ingresado. Su contaseña es " +
-	"el código enviado.";
+    " dirección de correo electrónico asociada al usuario ingresado. Su contaseña es " +
+    "el código enviado.";
+			this.lIndicacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// tbUsuarioCO
 			// 
 			this.tbUsuarioCO.AcceptsTab = true;
 			this.tbUsuarioCO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.tbUsuarioCO.Location = new System.Drawing.Point(35, 103);
+			this.tbUsuarioCO.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.tbUsuarioCO.Location = new System.Drawing.Point(198, 179);
 			this.tbUsuarioCO.Name = "tbUsuarioCO";
-			this.tbUsuarioCO.Size = new System.Drawing.Size(195, 20);
+			this.tbUsuarioCO.Size = new System.Drawing.Size(258, 25);
 			this.tbUsuarioCO.TabIndex = 13;
 			// 
 			// lCorreoCO
 			// 
 			this.lCorreoCO.AutoSize = true;
 			this.lCorreoCO.BackColor = System.Drawing.SystemColors.ButtonFace;
-			this.lCorreoCO.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lCorreoCO.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
 			this.lCorreoCO.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-			this.lCorreoCO.Location = new System.Drawing.Point(32, 85);
+			this.lCorreoCO.Location = new System.Drawing.Point(261, 151);
 			this.lCorreoCO.Name = "lCorreoCO";
-			this.lCorreoCO.Size = new System.Drawing.Size(97, 15);
+			this.lCorreoCO.Size = new System.Drawing.Size(135, 21);
 			this.lCorreoCO.TabIndex = 14;
-			this.lCorreoCO.Text = "Digite su Correo";
+			this.lCorreoCO.Text = "Digite su correo:";
 			// 
 			// FRMContraOlvidadaPerReg
 			// 

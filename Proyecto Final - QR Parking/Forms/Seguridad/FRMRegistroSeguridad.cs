@@ -55,18 +55,9 @@ namespace Proyecto_Final___QR_Parking.Seguridad
 			tabla_RSeguridad.AgregarPersonal(nuevoUsuarioSeguridad);
 			bool success = tabla_RSeguridad.GuardarPersonal();
 
-			if (success)
-			{
-				MessageBox.Show(
-					"¡Error al guardar los datos!",
-					"Registro de Seguridad",
-					MessageBoxButtons.OK,
-					MessageBoxIcon.Error
-				);
-
+			if (!success)
 				return;
-			}
-						
+			
 			MessageBox.Show(
 				"¡Los datos se guardaron exitosamente!",
 				"Registro de Seguridad",

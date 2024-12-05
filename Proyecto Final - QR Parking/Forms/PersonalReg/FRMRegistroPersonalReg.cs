@@ -53,17 +53,8 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 			tabla_RPersonalReg.AgregarPersonal(nuevoRegistroPersonal);
 			bool success = tabla_RPersonalReg.GuardarPersonal();
 
-			if (success)
-			{
-				MessageBox.Show(
-					"¡Error al guardar los datos!",
-					"Registro de Personal",
-					MessageBoxButtons.OK,
-					MessageBoxIcon.Error
-				);
-
+			if (!success)
 				return;
-			}
 
 			MessageBox.Show(
 				"¡Los datos se guardaron exitosamente!",

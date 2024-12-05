@@ -103,9 +103,13 @@ namespace Proyecto_Final___QR_Parking.Clases.Tablas
 						writer.Write(registro.Fecha.ToString());
 					}
 
-					File.Delete(nombre_fichero);
-					File.Move(temp, nombre_fichero);
 				}
+
+				if (File.Exists(nombre_fichero))
+					File.Delete(nombre_fichero);
+
+				File.Move(temp, nombre_fichero);
+				return true;
 			}
 
 			catch (Exception ex)
@@ -119,22 +123,13 @@ namespace Proyecto_Final___QR_Parking.Clases.Tablas
 
 				return false;
 			}
-
-			return true;
 		}
 
 		public void CargarRegistros()
 		{
 			if (!File.Exists(nombre_fichero))
 			{
-				MessageBox.Show(
-					"¡Aún no se ha guardado ningún registro de QR!",
-					"Advertencia",
-					MessageBoxButtons.OK,
-					MessageBoxIcon.Warning
-				);
-
-				return;
+				File.Create(nombre_fichero).Close();
 			}
 
 			using (var stream = File.Open(nombre_fichero, FileMode.Open, FileAccess.Read))
