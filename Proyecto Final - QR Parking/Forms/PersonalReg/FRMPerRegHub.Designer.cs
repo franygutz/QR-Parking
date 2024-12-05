@@ -29,14 +29,15 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMPerRegHub));
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.msPerRegHub = new System.Windows.Forms.MenuStrip();
 			this.tsmiExportar = new System.Windows.Forms.ToolStripMenuItem();
 			this.formatoPDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.formatoExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmicerrarSesion = new System.Windows.Forms.ToolStripMenuItem();
+			this.tsmiCerrarSesion = new System.Windows.Forms.ToolStripMenuItem();
 			this.pbLogoQRLogInSeg = new System.Windows.Forms.PictureBox();
 			this.lBienvenidoPerReg = new System.Windows.Forms.Label();
 			this.dgvRegistros = new System.Windows.Forms.DataGridView();
@@ -54,7 +55,7 @@
 			this.msPerRegHub.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.msPerRegHub.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiExportar,
-            this.tsmicerrarSesion});
+            this.tsmiCerrarSesion});
 			this.msPerRegHub.Location = new System.Drawing.Point(0, 0);
 			this.msPerRegHub.Name = "msPerRegHub";
 			this.msPerRegHub.Size = new System.Drawing.Size(981, 29);
@@ -87,14 +88,14 @@
 			this.formatoExcelToolStripMenuItem.Size = new System.Drawing.Size(167, 24);
 			this.formatoExcelToolStripMenuItem.Text = "Formato Excel";
 			// 
-			// tsmicerrarSesion
+			// tsmiCerrarSesion
 			// 
-			this.tsmicerrarSesion.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmicerrarSesion.ForeColor = System.Drawing.Color.Red;
-			this.tsmicerrarSesion.Name = "tsmicerrarSesion";
-			this.tsmicerrarSesion.Size = new System.Drawing.Size(119, 25);
-			this.tsmicerrarSesion.Text = "Cerrar Sesión";
-			this.tsmicerrarSesion.Click += new System.EventHandler(this.tsmicerrarSesion_Click);
+			this.tsmiCerrarSesion.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmiCerrarSesion.ForeColor = System.Drawing.Color.Red;
+			this.tsmiCerrarSesion.Name = "tsmiCerrarSesion";
+			this.tsmiCerrarSesion.Size = new System.Drawing.Size(119, 25);
+			this.tsmiCerrarSesion.Text = "Cerrar Sesión";
+			this.tsmiCerrarSesion.Click += new System.EventHandler(this.tsmiCerrarSesion_Click);
 			// 
 			// pbLogoQRLogInSeg
 			// 
@@ -122,33 +123,45 @@
 			// 
 			this.dgvRegistros.AllowUserToAddRows = false;
 			this.dgvRegistros.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F);
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvRegistros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			this.dgvRegistros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvRegistros.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
 			this.dgvRegistros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvRegistros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.dgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvRegistros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Ver,
             this.Editar});
+			this.dgvRegistros.Cursor = System.Windows.Forms.Cursors.Default;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dgvRegistros.DefaultCellStyle = dataGridViewCellStyle3;
 			this.dgvRegistros.Location = new System.Drawing.Point(12, 156);
 			this.dgvRegistros.Name = "dgvRegistros";
-			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvRegistros.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			this.dgvRegistros.ReadOnly = true;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistros.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.dgvRegistros.RowTemplate.Height = 30;
 			this.dgvRegistros.Size = new System.Drawing.Size(957, 409);
 			this.dgvRegistros.TabIndex = 72;
@@ -160,10 +173,10 @@
 			this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Ver.HeaderText = "Ver";
 			this.Ver.Name = "Ver";
+			this.Ver.ReadOnly = true;
 			this.Ver.Resizable = System.Windows.Forms.DataGridViewTriState.False;
 			this.Ver.Text = "Ver";
 			this.Ver.UseColumnTextForButtonValue = true;
-			this.Ver.Width = 30;
 			// 
 			// Editar
 			// 
@@ -171,9 +184,9 @@
 			this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Editar.HeaderText = "Editar";
 			this.Editar.Name = "Editar";
+			this.Editar.ReadOnly = true;
 			this.Editar.Text = "Editar";
 			this.Editar.UseColumnTextForButtonValue = true;
-			this.Editar.Width = 50;
 			// 
 			// bAgregar
 			// 
@@ -228,7 +241,7 @@
 		#endregion
 		private System.Windows.Forms.MenuStrip msPerRegHub;
 		private System.Windows.Forms.ToolStripMenuItem tsmiExportar;
-		private System.Windows.Forms.ToolStripMenuItem tsmicerrarSesion;
+		private System.Windows.Forms.ToolStripMenuItem tsmiCerrarSesion;
 		private System.Windows.Forms.Label lBienvenidoPerReg;
 		private System.Windows.Forms.PictureBox pbLogoQRLogInSeg;
 		private System.Windows.Forms.DataGridView dgvRegistros;

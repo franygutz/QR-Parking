@@ -146,7 +146,6 @@
 			// dtpFechaAg
 			// 
 			this.dtpFechaAg.CalendarFont = new System.Drawing.Font("Segoe UI", 8F);
-			this.dtpFechaAg.Enabled = false;
 			this.dtpFechaAg.Location = new System.Drawing.Point(107, 340);
 			this.dtpFechaAg.Margin = new System.Windows.Forms.Padding(4);
 			this.dtpFechaAg.MaxDate = new System.DateTime(2111, 1, 10, 0, 0, 0, 0);
@@ -159,7 +158,6 @@
 			// cbTipoAg
 			// 
 			this.cbTipoAg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbTipoAg.Enabled = false;
 			this.cbTipoAg.FlatStyle = System.Windows.Forms.FlatStyle.System;
 			this.cbTipoAg.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.cbTipoAg.FormattingEnabled = true;
@@ -213,7 +211,6 @@
 			// tbApellidosAg
 			// 
 			this.tbApellidosAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.tbApellidosAg.Enabled = false;
 			this.tbApellidosAg.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.tbApellidosAg.Location = new System.Drawing.Point(107, 149);
 			this.tbApellidosAg.Margin = new System.Windows.Forms.Padding(4);
@@ -225,7 +222,6 @@
 			// tbNombresAg
 			// 
 			this.tbNombresAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.tbNombresAg.Enabled = false;
 			this.tbNombresAg.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.tbNombresAg.Location = new System.Drawing.Point(107, 101);
 			this.tbNombresAg.Margin = new System.Windows.Forms.Padding(4);
@@ -298,6 +294,7 @@
 			this.bExportar.TabIndex = 8;
 			this.bExportar.Text = "Exportar";
 			this.bExportar.UseVisualStyleBackColor = true;
+			this.bExportar.Click += new System.EventHandler(this.bExportar_Click);
 			// 
 			// lQrGenerado
 			// 

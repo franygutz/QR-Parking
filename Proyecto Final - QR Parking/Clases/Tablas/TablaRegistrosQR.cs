@@ -49,9 +49,7 @@ namespace Proyecto_Final___QR_Parking.Clases.Tablas
 		public bool EditarRegistro(RegistroQR registroEditado)
 		{
 			var registroOriginal = tabla.FirstOrDefault(
-				r => r.PlacaQR.Equals(
-					registroEditado.PlacaQR, StringComparison.OrdinalIgnoreCase
-				)
+				reg => reg.PlacaQR == registroEditado.PlacaQR
 			);
 
 			if (registroOriginal != null)

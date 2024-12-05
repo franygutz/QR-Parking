@@ -119,11 +119,11 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 		private void bGuardar_Click(object sender, EventArgs e)
 		{
 			// Validar que todos los campos tengan texto
-			if (string.IsNullOrWhiteSpace(this.tbNombresAg.Text) ||
-				string.IsNullOrWhiteSpace(this.tbApellidosAg.Text) ||
-				string.IsNullOrWhiteSpace(this.cbTipoAg.Text) ||
-				string.IsNullOrWhiteSpace(this.mtbCedulaAg.Text) ||
-				string.IsNullOrWhiteSpace(this.tbPlacaAg.Text))
+			if (string.IsNullOrWhiteSpace(tbNombresAg.Text) ||
+				string.IsNullOrWhiteSpace(tbApellidosAg.Text) ||
+				string.IsNullOrWhiteSpace(cbTipoAg.Text) ||
+				string.IsNullOrWhiteSpace(mtbCedulaAg.Text) ||
+				string.IsNullOrWhiteSpace(tbPlacaAg.Text))
 			{
 				MessageBox.Show(
 					"¡Todos los campos son obligatorios! Por favor, complete todos los campos.",
@@ -166,6 +166,8 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 						MessageBoxButtons.OK,
 						MessageBoxIcon.Error
 					);
+
+					return;
 				}
 				
 				MessageBox.Show(
@@ -176,8 +178,8 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 				);
 
 				// Generar nuevo QR
-				string contenidoQR = $"Nombre: {this.tbNombresAg.Text} {this.tbApellidosAg.Text}\n";
-				contenidoQR += $"Placa: {this.tbPlacaAg.Text}";
+				string contenidoQR = $"Nombre: {tbNombresAg.Text} {tbApellidosAg.Text}\n";
+				contenidoQR += $"Placa: {tbPlacaAg.Text}";
 
 				BarcodeWriter escritorQR = new BarcodeWriter
 				{

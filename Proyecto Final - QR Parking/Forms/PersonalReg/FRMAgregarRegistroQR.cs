@@ -32,11 +32,11 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 		private void bGuardar_Click(object sender, EventArgs e)
 		{
 			// Validar que todos los campos tengan texto
-			if (string.IsNullOrWhiteSpace(this.tbNombresAg.Text) ||
-				string.IsNullOrWhiteSpace(this.tbApellidosAg.Text) ||
-				string.IsNullOrWhiteSpace(this.cbTipoAg.Text) ||
-				string.IsNullOrWhiteSpace(this.mtbCedulaAg.Text) ||
-				string.IsNullOrWhiteSpace(this.tbPlacaAg.Text))
+			if (string.IsNullOrWhiteSpace(tbNombresAg.Text) ||
+				string.IsNullOrWhiteSpace(tbApellidosAg.Text) ||
+				string.IsNullOrWhiteSpace(cbTipoAg.Text) ||
+				string.IsNullOrWhiteSpace(mtbCedulaAg.Text) ||
+				string.IsNullOrWhiteSpace(tbPlacaAg.Text))
 			{
 				MessageBox.Show(
 					"¡Todos los campos son obligatorios! Por favor, complete todos los campos.", 
@@ -73,10 +73,10 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 			}
 
 			// Validar si es una placa repetida
-			if (tabla_RQR.VerificarExistenciaPlaca(this.tbPlacaAg.Text))
+			if (tabla_RQR.VerificarExistenciaPlaca(tbPlacaAg.Text))
 			{
 				MessageBox.Show(
-					"Ya existe un Usuario con la Placa indicada", 
+					"¡Ya existe un usuario con la placa indicada!", 
 					"Registro de QR Parking", 
 					MessageBoxButtons.OK, 
 					MessageBoxIcon.Error
@@ -86,7 +86,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 			}
 
 			DialogResult resp = MessageBox.Show(
-				"¿Está seguro de guardar los datos?", 
+				"¿Está seguro que desea guardar estos datos?", 
 				"Registro de QR Parking", 
 				MessageBoxButtons.YesNo, 
 				MessageBoxIcon.Question
@@ -96,12 +96,12 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 			{
 				RegistroQR nuevoRegistroQR = new RegistroQR()
 				{
-					NombresQR = this.tbNombresAg.Text,
-					ApellidosQR = this.tbApellidosAg.Text,
-					TipoQR = this.cbTipoAg.Text,
-					CedulaQR = this.mtbCedulaAg.Text,
-					PlacaQR = this.tbPlacaAg.Text,
-					Fecha = this.dtpFechaAg.Value,
+					NombresQR = tbNombresAg.Text,
+					ApellidosQR = tbApellidosAg.Text,
+					TipoQR = cbTipoAg.Text,
+					CedulaQR = mtbCedulaAg.Text,
+					PlacaQR = tbPlacaAg.Text,
+					Fecha = dtpFechaAg.Value,
 				};
 
 				tabla_RQR.AgregarRegistroPlaca(nuevoRegistroQR);
@@ -122,7 +122,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 				MessageBox.Show(
 					"¡Los datos se guardaron exitosamente!", 
 					"Registro de QR Parking", 
-					MessageBoxButtons.OK, 
+					MessageBoxButtons.OK,
 					MessageBoxIcon.Information
 				);
 
@@ -137,9 +137,9 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 					Format = BarcodeFormat.QR_CODE,
 					Options = new ZXing.Common.EncodingOptions
 					{
-						Width = 200,  
-						Height = 200, 
-						Margin = 1    
+						Width = pbCodigoQR.Width,
+						Height = pbCodigoQR.Height,
+						Margin = 1
 					}
 				};
 

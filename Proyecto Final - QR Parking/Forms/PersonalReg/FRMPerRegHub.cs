@@ -29,7 +29,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 			dgvRegistros.DataSource = TablaRegistrosQR.GetInstancia().GetTabla();
 		}
 
-		private void tsmicerrarSesion_Click(object sender, EventArgs e)
+		private void tsmiCerrarSesion_Click(object sender, EventArgs e)
 		{
 			DialogResult respuesta = MessageBox.Show(
 				"¿Desea cerrar sesión?",
@@ -52,6 +52,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 
 			agregarRegistro.RegistroGuardado += () =>
 			{
+				dgvRegistros.DataSource = null;
 				dgvRegistros.DataSource = TablaRegistrosQR.GetInstancia().GetTabla();
 			};
 
@@ -102,6 +103,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 
 					editarForm.RegistroEditado += () =>
 					{
+						dgvRegistros.DataSource = null;
 						dgvRegistros.DataSource = TablaRegistrosQR.GetInstancia().GetTabla();
 					};
 
