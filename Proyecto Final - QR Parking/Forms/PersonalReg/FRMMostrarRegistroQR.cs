@@ -70,8 +70,8 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 				Format = BarcodeFormat.QR_CODE,
 				Options = new ZXing.Common.EncodingOptions
 				{
-					Width = 200,
-					Height = 200,
+					Width = pbCodigoQR.Width,
+					Height = pbCodigoQR.Height,
 					Margin = 1
 				}
 			};
@@ -86,7 +86,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 			if (pbCodigoQR.Image == null)
 			{
 				MessageBox.Show(
-					"No hay ningún QR generado para exportar.",
+					"¡No hay ningún QR generado para exportar!",
 					"Advertencia",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Warning
@@ -102,7 +102,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 				if (!Directory.Exists(carpetaDestino))
 					Directory.CreateDirectory(carpetaDestino);
 
-				string nombreArchivo = $"QR_{tbPlacaAg.Text}_{DateTime.Now:ddMMyyyy_HHmm}.png";
+				string nombreArchivo = $"QR_{tbPlacaAg.Text}.png";
 				string rutaArchivo = Path.Combine(carpetaDestino, nombreArchivo);
 
 				pbCodigoQR.Image.Save(rutaArchivo);

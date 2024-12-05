@@ -38,81 +38,120 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 				string.IsNullOrWhiteSpace(this.mtbCedulaAg.Text) ||
 				string.IsNullOrWhiteSpace(this.tbPlacaAg.Text))
 			{
-				MessageBox.Show("Todos los campos son obligatorios. Por favor, complete todos los campos.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(
+					"¡Todos los campos son obligatorios! Por favor, complete todos los campos.", 
+					"Error de Validación", 
+					MessageBoxButtons.OK, 
+					MessageBoxIcon.Warning
+				);
+
 				return;
 			}
 
 			if (tbPlacaAg.Text.Length < 4)
 			{
-				MessageBox.Show("La placa debe tener al menos 4 caracteres.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(
+					"¡La placa debe tener al menos 4 caracteres!", 
+					"Error de Validación", 
+					MessageBoxButtons.OK, 
+					MessageBoxIcon.Warning
+				);
+
 				return;
 			}
 
 			if (tbPlacaAg.Text.Length > 8)
 			{
-				MessageBox.Show("La placa debe tener como máximo 8 caracteres.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(
+					"¡La placa debe tener como máximo 8 caracteres.!", 
+					"Error de Validación", 
+					MessageBoxButtons.OK, 
+					MessageBoxIcon.Warning
+				);
+
 				return;
 			}
 
-			// Validar que no sea una placa repetida
-			if (!tabla_RQR.VerificarExistenciaPlaca(this.tbPlacaAg.Text))
+			// Validar si es una placa repetida
+			if (tabla_RQR.VerificarExistenciaPlaca(this.tbPlacaAg.Text))
 			{
-				DialogResult resp = MessageBox.Show("¿Está seguro de guardar los datos?", "Registro de QR Parking", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-				if (resp == DialogResult.Yes)
+				MessageBox.Show(
+					"Ya existe un Usuario con la Placa indicada", 
+					"Registro de QR Parking", 
+					MessageBoxButtons.OK, 
+					MessageBoxIcon.Error
+				);
+								
+				return;
+			}
+
+			DialogResult resp = MessageBox.Show(
+				"¿Está seguro de guardar los datos?", 
+				"Registro de QR Parking", 
+				MessageBoxButtons.YesNo, 
+				MessageBoxIcon.Question
+			);
+
+			if (resp == DialogResult.Yes)
+			{
+				RegistroQR nuevoRegistroQR = new RegistroQR()
 				{
-					RegistroQR nuevoRegistroQR = new RegistroQR()
-					{
-						NombresQR = this.tbNombresAg.Text,
-						ApellidosQR = this.tbApellidosAg.Text,
-						TipoQR = this.cbTipoAg.Text,
-						CedulaQR = this.mtbCedulaAg.Text,
-						PlacaQR = this.tbPlacaAg.Text,
-						Fecha = this.dtpFechaAg.Value,
-					};
+					NombresQR = this.tbNombresAg.Text,
+					ApellidosQR = this.tbApellidosAg.Text,
+					TipoQR = this.cbTipoAg.Text,
+					CedulaQR = this.mtbCedulaAg.Text,
+					PlacaQR = this.tbPlacaAg.Text,
+					Fecha = this.dtpFechaAg.Value,
+				};
 
-					tabla_RQR.AgregarRegistroPlaca(nuevoRegistroQR);
+				tabla_RQR.AgregarRegistroPlaca(nuevoRegistroQR);
 
-					bool success = tabla_RQR.GuardarRegistros();
-					if (success)
-					{
-						MessageBox.Show("¡Error al guardar los datos!", "Registro de QR Parking", MessageBoxButtons.OK, MessageBoxIcon.Error);
-					}
-					else
-					{
-						MessageBox.Show("¡Los datos se guardaron exitosamente!", "Registro de QR Parking", MessageBoxButtons.OK, MessageBoxIcon.Information);
-						// se dispara porque si no, no se actuliza el dgv
-						RegistroGuardado?.Invoke();
-					}
+				bool success = tabla_RQR.GuardarRegistros();
+				if (!success)
+				{
+					MessageBox.Show(
+						"¡Error al guardar los datos!", 
+						"Registro de QR Parking", 
+						MessageBoxButtons.OK, 
+						MessageBoxIcon.Error
+					);
 
-					// Generación de QR
-					string contenidoQR = $"Nombre: {this.tbNombresAg.Text} {this.tbApellidosAg.Text}\nPlaca: {this.tbPlacaAg.Text}";
-
-					BarcodeWriter escritorQR = new BarcodeWriter
-					{
-						Format = BarcodeFormat.QR_CODE,
-						Options = new ZXing.Common.EncodingOptions
-						{
-							Width = 200,  
-							Height = 200, 
-							Margin = 1    
-						}
-					};
-
-					// Mostrar QR en pictureBox
-					Bitmap qrCodeImage = escritorQR.Write(contenidoQR);
-					pbCodigoQR.Image = qrCodeImage;
+					return;
 				}
-			}
-			else
-			{
-				MessageBox.Show("Ya existe un Usuario con la Placa indicada", "Registro de QR Parking", MessageBoxButtons.OK, MessageBoxIcon.Error);
-			}
 
-			lQrGenerado.Visible = true;
-			pbCodigoQR.Visible = true;
-			bExportar.Visible = true;
-			lQRCode.Visible = false;
+				MessageBox.Show(
+					"¡Los datos se guardaron exitosamente!", 
+					"Registro de QR Parking", 
+					MessageBoxButtons.OK, 
+					MessageBoxIcon.Information
+				);
 
+				// se invoka el evento para actualizar el dgv
+				RegistroGuardado?.Invoke();
+
+				// Generación de QR
+				string contenidoQR = $"Nombre: {this.tbNombresAg.Text} {this.tbApellidosAg.Text}\nPlaca: {this.tbPlacaAg.Text}";
+
+				BarcodeWriter escritorQR = new BarcodeWriter
+				{
+					Format = BarcodeFormat.QR_CODE,
+					Options = new ZXing.Common.EncodingOptions
+					{
+						Width = 200,  
+						Height = 200, 
+						Margin = 1    
+					}
+				};
+
+				// Mostrar QR en pictureBox
+				Bitmap qrCodeImage = escritorQR.Write(contenidoQR);
+				pbCodigoQR.Image = qrCodeImage;
+				
+				lQrGenerado.Visible = true;
+				pbCodigoQR.Visible = true;
+				bExportar.Visible = true;
+				lQRCode.Visible = false;
+			}
 		}
 
 		private void bVolverSignInPerReg_Click(object sender, EventArgs e)
@@ -124,7 +163,13 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 		{
 			if(pbCodigoQR.Image == null)
 			{
-				MessageBox.Show("No hay ningún QR generado para exportar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(
+					"¡No hay ningún QR generado para exportar!",
+					"Advertencia",
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Warning
+				);
+
 				return;
 			}
 
@@ -135,12 +180,12 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 				if (!Directory.Exists(carpetaDestino))
 					Directory.CreateDirectory(carpetaDestino);
 
-				string nombreArchivo = $"CodigoQR_{this.tbPlacaAg.Text}_{DateTime.Now:yyyyMMdd_HHmmss}.png";
+				string nombreArchivo = $"CodigoQR_{this.tbPlacaAg.Text}.png";
 				string rutaArchivo = Path.Combine(carpetaDestino, nombreArchivo);
 				pbCodigoQR.Image.Save(rutaArchivo);
 
 				MessageBox.Show(
-					$"Código QR guardado exitosamente en:\n{rutaArchivo}",
+					$"¡Código QR guardado exitosamente!\n\nUbicación:\n{rutaArchivo}",
 					"Éxito",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Information
@@ -150,10 +195,11 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 			catch (Exception ex)
 			{ 
 				MessageBox.Show(
-					$"Ocurrió un error al guardar el QR: {ex.Message}",
+					$"¡Error al guardar QR!\n{ex.Message}",
 					"Error",
-								MessageBoxButtons.OK,
-								MessageBoxIcon.Error);
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Error
+				);
 			}
 		}
 

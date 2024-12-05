@@ -68,7 +68,7 @@ namespace Proyecto_Final___QR_Parking
 
 		private void tsmiMenuAdmin_Click(object sender, EventArgs e)
 		{
-			FRMAdministrador frmAdmin = FRMAdministrador.getInstancia();
+			FRMAdministrador frmAdmin = FRMAdministrador.GetInstancia();
 			frmAdmin.MdiParent = this;
 			frmAdmin.Show();
 		}

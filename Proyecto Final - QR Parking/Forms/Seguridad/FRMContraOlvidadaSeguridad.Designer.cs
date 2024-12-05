@@ -49,7 +49,7 @@
 			this.bAceptar.Location = new System.Drawing.Point(256, 299);
 			this.bAceptar.Name = "bAceptar";
 			this.bAceptar.Size = new System.Drawing.Size(123, 50);
-			this.bAceptar.TabIndex = 18;
+			this.bAceptar.TabIndex = 1;
 			this.bAceptar.Text = "Aceptar";
 			this.bAceptar.UseVisualStyleBackColor = true;
 			this.bAceptar.Click += new System.EventHandler(this.bAceptar_Click);
@@ -62,7 +62,7 @@
 			this.bIrGmail.Location = new System.Drawing.Point(498, 299);
 			this.bIrGmail.Name = "bIrGmail";
 			this.bIrGmail.Size = new System.Drawing.Size(123, 50);
-			this.bIrGmail.TabIndex = 17;
+			this.bIrGmail.TabIndex = 2;
 			this.bIrGmail.Text = "Ir a Gmail";
 			this.bIrGmail.UseVisualStyleBackColor = true;
 			this.bIrGmail.Click += new System.EventHandler(this.bIrGmail_Click);
@@ -75,7 +75,7 @@
 			this.bVolver.Location = new System.Drawing.Point(18, 299);
 			this.bVolver.Name = "bVolver";
 			this.bVolver.Size = new System.Drawing.Size(123, 50);
-			this.bVolver.TabIndex = 16;
+			this.bVolver.TabIndex = 3;
 			this.bVolver.Text = "Volver";
 			this.bVolver.UseVisualStyleBackColor = true;
 			this.bVolver.Click += new System.EventHandler(this.bVolver_Click);
@@ -102,7 +102,7 @@
 			this.tbUsuarioCO.Location = new System.Drawing.Point(198, 179);
 			this.tbUsuarioCO.Name = "tbUsuarioCO";
 			this.tbUsuarioCO.Size = new System.Drawing.Size(258, 25);
-			this.tbUsuarioCO.TabIndex = 13;
+			this.tbUsuarioCO.TabIndex = 0;
 			// 
 			// lCorreoCO
 			// 

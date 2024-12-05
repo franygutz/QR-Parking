@@ -106,7 +106,7 @@
 			this.bEscanear.Location = new System.Drawing.Point(29, 306);
 			this.bEscanear.Name = "bEscanear";
 			this.bEscanear.Size = new System.Drawing.Size(217, 51);
-			this.bEscanear.TabIndex = 74;
+			this.bEscanear.TabIndex = 0;
 			this.bEscanear.Text = "Escanea";
 			this.bEscanear.UseVisualStyleBackColor = false;
 			this.bEscanear.Click += new System.EventHandler(this.bEscanear_Click);
@@ -160,7 +160,7 @@
 			this.bTerminar.Location = new System.Drawing.Point(318, 306);
 			this.bTerminar.Name = "bTerminar";
 			this.bTerminar.Size = new System.Drawing.Size(377, 51);
-			this.bTerminar.TabIndex = 79;
+			this.bTerminar.TabIndex = 1;
 			this.bTerminar.Text = "Terminar";
 			this.bTerminar.UseVisualStyleBackColor = false;
 			this.bTerminar.Click += new System.EventHandler(this.bTerminar_Click);

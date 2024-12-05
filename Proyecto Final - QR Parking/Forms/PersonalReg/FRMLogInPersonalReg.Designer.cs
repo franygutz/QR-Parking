@@ -61,7 +61,7 @@
 			this.linklRegistrate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.linklRegistrate.Name = "linklRegistrate";
 			this.linklRegistrate.Size = new System.Drawing.Size(65, 13);
-			this.linklRegistrate.TabIndex = 77;
+			this.linklRegistrate.TabIndex = 6;
 			this.linklRegistrate.TabStop = true;
 			this.linklRegistrate.Text = "¡Regístrate!";
 			this.linklRegistrate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklRegistrate_LinkClicked);
@@ -74,7 +74,7 @@
 			this.linklRecuperar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.linklRecuperar.Name = "linklRecuperar";
 			this.linklRecuperar.Size = new System.Drawing.Size(121, 13);
-			this.linklRecuperar.TabIndex = 76;
+			this.linklRecuperar.TabIndex = 5;
 			this.linklRecuperar.TabStop = true;
 			this.linklRecuperar.Text = "Recuperar Contraseña";
 			this.linklRecuperar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklRecuperar_LinkClicked);
@@ -89,7 +89,6 @@
 			this.lRegistrarse.Size = new System.Drawing.Size(154, 19);
 			this.lRegistrarse.TabIndex = 75;
 			this.lRegistrarse.Text = "¿No tienes una cuenta?";
-			this.lRegistrarse.Click += new System.EventHandler(this.lRegistrarse_Click);
 			// 
 			// lContraOlvidada
 			// 
@@ -101,7 +100,6 @@
 			this.lContraOlvidada.Size = new System.Drawing.Size(171, 19);
 			this.lContraOlvidada.TabIndex = 74;
 			this.lContraOlvidada.Text = "¿Olvidaste tu Contraseña?";
-			this.lContraOlvidada.Click += new System.EventHandler(this.lContraOlvidada_Click);
 			// 
 			// bIniciarSesionPerReg
 			// 
@@ -110,10 +108,10 @@
 			this.bIniciarSesionPerReg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.bIniciarSesionPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
 			this.bIniciarSesionPerReg.Location = new System.Drawing.Point(859, 296);
-			this.bIniciarSesionPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.bIniciarSesionPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.bIniciarSesionPerReg.Name = "bIniciarSesionPerReg";
 			this.bIniciarSesionPerReg.Size = new System.Drawing.Size(154, 50);
-			this.bIniciarSesionPerReg.TabIndex = 73;
+			this.bIniciarSesionPerReg.TabIndex = 4;
 			this.bIniciarSesionPerReg.Text = "Inicia Sesión";
 			this.bIniciarSesionPerReg.UseVisualStyleBackColor = false;
 			this.bIniciarSesionPerReg.Click += new System.EventHandler(this.bIniciarSesionPerReg_Click);
@@ -122,7 +120,7 @@
 			// 
 			this.pbLogoQRSignInSeg.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoQRSignInSeg.Image")));
 			this.pbLogoQRSignInSeg.Location = new System.Drawing.Point(813, 69);
-			this.pbLogoQRSignInSeg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.pbLogoQRSignInSeg.Margin = new System.Windows.Forms.Padding(4);
 			this.pbLogoQRSignInSeg.Name = "pbLogoQRSignInSeg";
 			this.pbLogoQRSignInSeg.Size = new System.Drawing.Size(240, 94);
 			this.pbLogoQRSignInSeg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -135,10 +133,10 @@
 			this.cbVerOcultarLogInPerReg.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.cbVerOcultarLogInPerReg.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.cbVerOcultarLogInPerReg.Location = new System.Drawing.Point(1049, 255);
-			this.cbVerOcultarLogInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbVerOcultarLogInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.cbVerOcultarLogInPerReg.Name = "cbVerOcultarLogInPerReg";
 			this.cbVerOcultarLogInPerReg.Size = new System.Drawing.Size(42, 17);
-			this.cbVerOcultarLogInPerReg.TabIndex = 71;
+			this.cbVerOcultarLogInPerReg.TabIndex = 3;
 			this.cbVerOcultarLogInPerReg.Text = "Ver";
 			this.cbVerOcultarLogInPerReg.UseVisualStyleBackColor = true;
 			this.cbVerOcultarLogInPerReg.CheckedChanged += new System.EventHandler(this.cbVerOcultarLogInPerReg_CheckedChanged);
@@ -148,10 +146,10 @@
 			this.mtbContraLogInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.mtbContraLogInPerReg.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.mtbContraLogInPerReg.Location = new System.Drawing.Point(824, 249);
-			this.mtbContraLogInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.mtbContraLogInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.mtbContraLogInPerReg.Name = "mtbContraLogInPerReg";
 			this.mtbContraLogInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.mtbContraLogInPerReg.TabIndex = 66;
+			this.mtbContraLogInPerReg.TabIndex = 1;
 			this.mtbContraLogInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbCorreoLogInPerReg
@@ -159,10 +157,10 @@
 			this.tbCorreoLogInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbCorreoLogInPerReg.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.tbCorreoLogInPerReg.Location = new System.Drawing.Point(824, 202);
-			this.tbCorreoLogInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbCorreoLogInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.tbCorreoLogInPerReg.Name = "tbCorreoLogInPerReg";
 			this.tbCorreoLogInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.tbCorreoLogInPerReg.TabIndex = 65;
+			this.tbCorreoLogInPerReg.TabIndex = 0;
 			this.tbCorreoLogInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lContrasenaLogInPerReg
@@ -175,7 +173,6 @@
 			this.lContrasenaLogInPerReg.Size = new System.Drawing.Size(86, 19);
 			this.lContrasenaLogInPerReg.TabIndex = 70;
 			this.lContrasenaLogInPerReg.Text = "Contraseña: ";
-			this.lContrasenaLogInPerReg.Click += new System.EventHandler(this.lContrasenaLogInPerReg_Click);
 			// 
 			// lCorreoLogInPerReg
 			// 
@@ -187,7 +184,6 @@
 			this.lCorreoLogInPerReg.Size = new System.Drawing.Size(128, 19);
 			this.lCorreoLogInPerReg.TabIndex = 69;
 			this.lCorreoLogInPerReg.Text = "Correo Electrónico:";
-			this.lCorreoLogInPerReg.Click += new System.EventHandler(this.lCorreoLogInPerReg_Click);
 			// 
 			// panelArribaSeguridad
 			// 
@@ -195,7 +191,7 @@
 			this.panelArribaSeguridad.Controls.Add(this.pbLogoQRParking);
 			this.panelArribaSeguridad.Controls.Add(this.lLogInPerReg);
 			this.panelArribaSeguridad.Location = new System.Drawing.Point(0, -1);
-			this.panelArribaSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelArribaSeguridad.Margin = new System.Windows.Forms.Padding(4);
 			this.panelArribaSeguridad.Name = "panelArribaSeguridad";
 			this.panelArribaSeguridad.Size = new System.Drawing.Size(1129, 51);
 			this.panelArribaSeguridad.TabIndex = 68;
@@ -204,7 +200,7 @@
 			// 
 			this.pbLogoQRParking.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoQRParking.Image")));
 			this.pbLogoQRParking.Location = new System.Drawing.Point(14, -1);
-			this.pbLogoQRParking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.pbLogoQRParking.Margin = new System.Windows.Forms.Padding(4);
 			this.pbLogoQRParking.Name = "pbLogoQRParking";
 			this.pbLogoQRParking.Size = new System.Drawing.Size(0, 0);
 			this.pbLogoQRParking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -227,7 +223,7 @@
 			this.panelAbajoSeguridad.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.panelAbajoSeguridad.Controls.Add(this.bVolverLogInPerReg);
 			this.panelAbajoSeguridad.Location = new System.Drawing.Point(0, 509);
-			this.panelAbajoSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelAbajoSeguridad.Margin = new System.Windows.Forms.Padding(4);
 			this.panelAbajoSeguridad.Name = "panelAbajoSeguridad";
 			this.panelAbajoSeguridad.Size = new System.Drawing.Size(1129, 51);
 			this.panelAbajoSeguridad.TabIndex = 67;
@@ -238,10 +234,10 @@
 			this.bVolverLogInPerReg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.bVolverLogInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
 			this.bVolverLogInPerReg.Location = new System.Drawing.Point(897, 8);
-			this.bVolverLogInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.bVolverLogInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.bVolverLogInPerReg.Name = "bVolverLogInPerReg";
 			this.bVolverLogInPerReg.Size = new System.Drawing.Size(88, 35);
-			this.bVolverLogInPerReg.TabIndex = 0;
+			this.bVolverLogInPerReg.TabIndex = 7;
 			this.bVolverLogInPerReg.Text = "Volver";
 			this.bVolverLogInPerReg.UseVisualStyleBackColor = true;
 			this.bVolverLogInPerReg.Click += new System.EventHandler(this.bVolverLogInPerReg_Click);
@@ -250,7 +246,7 @@
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(0, 50);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(641, 463);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -279,7 +275,7 @@
 			this.Controls.Add(this.pictureBox1);
 			this.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.Name = "FRMLogInPersonalReg";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

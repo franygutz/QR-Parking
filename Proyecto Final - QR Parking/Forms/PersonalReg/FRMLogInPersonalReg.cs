@@ -85,25 +85,5 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 		{
 			mtbContraLogInPerReg.PasswordChar = '*';
 		}
-
-		private void lCorreoLogInPerReg_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void lContrasenaLogInPerReg_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void lContraOlvidada_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void lRegistrarse_Click(object sender, EventArgs e)
-		{
-
-		}
 	}
 }

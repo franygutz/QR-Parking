@@ -62,7 +62,7 @@
 			this.bGuardar.Margin = new System.Windows.Forms.Padding(4);
 			this.bGuardar.Name = "bGuardar";
 			this.bGuardar.Size = new System.Drawing.Size(108, 35);
-			this.bGuardar.TabIndex = 96;
+			this.bGuardar.TabIndex = 6;
 			this.bGuardar.Text = "Guardar";
 			this.bGuardar.UseVisualStyleBackColor = true;
 			this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);
@@ -99,9 +99,9 @@
 			// 
 			// lQRCode
 			// 
-			this.lQRCode.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+			this.lQRCode.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
 			this.lQRCode.ForeColor = System.Drawing.Color.DarkCyan;
-			this.lQRCode.Location = new System.Drawing.Point(462, 221);
+			this.lQRCode.Location = new System.Drawing.Point(460, 225);
 			this.lQRCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lQRCode.Name = "lQRCode";
 			this.lQRCode.Size = new System.Drawing.Size(286, 95);
@@ -127,15 +127,16 @@
 			this.bVolverSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.bVolverSignInPerReg.Name = "bVolverSignInPerReg";
 			this.bVolverSignInPerReg.Size = new System.Drawing.Size(108, 35);
-			this.bVolverSignInPerReg.TabIndex = 115;
+			this.bVolverSignInPerReg.TabIndex = 7;
 			this.bVolverSignInPerReg.Text = "Volver";
 			this.bVolverSignInPerReg.UseVisualStyleBackColor = true;
+			this.bVolverSignInPerReg.Click += new System.EventHandler(this.bVolverSignInPerReg_Click);
 			// 
 			// lFechaAg
 			// 
 			this.lFechaAg.AutoSize = true;
 			this.lFechaAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lFechaAg.Location = new System.Drawing.Point(75, 349);
+			this.lFechaAg.Location = new System.Drawing.Point(57, 343);
 			this.lFechaAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lFechaAg.Name = "lFechaAg";
 			this.lFechaAg.Size = new System.Drawing.Size(46, 17);
@@ -144,14 +145,15 @@
 			// 
 			// dtpFechaAg
 			// 
+			this.dtpFechaAg.CalendarFont = new System.Drawing.Font("Segoe UI", 8F);
 			this.dtpFechaAg.Enabled = false;
-			this.dtpFechaAg.Location = new System.Drawing.Point(134, 349);
+			this.dtpFechaAg.Location = new System.Drawing.Point(107, 340);
 			this.dtpFechaAg.Margin = new System.Windows.Forms.Padding(4);
 			this.dtpFechaAg.MaxDate = new System.DateTime(2111, 1, 10, 0, 0, 0, 0);
 			this.dtpFechaAg.MinDate = new System.DateTime(2024, 12, 1, 0, 0, 0, 0);
 			this.dtpFechaAg.Name = "dtpFechaAg";
 			this.dtpFechaAg.Size = new System.Drawing.Size(218, 25);
-			this.dtpFechaAg.TabIndex = 126;
+			this.dtpFechaAg.TabIndex = 5;
 			this.dtpFechaAg.Value = new System.DateTime(2024, 12, 3, 20, 11, 30, 0);
 			// 
 			// cbTipoAg
@@ -159,22 +161,23 @@
 			this.cbTipoAg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbTipoAg.Enabled = false;
 			this.cbTipoAg.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.cbTipoAg.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.cbTipoAg.FormattingEnabled = true;
 			this.cbTipoAg.Items.AddRange(new object[] {
             "Visitante",
             "Colaborador",
             "Estudiante"});
-			this.cbTipoAg.Location = new System.Drawing.Point(134, 299);
+			this.cbTipoAg.Location = new System.Drawing.Point(107, 290);
 			this.cbTipoAg.Margin = new System.Windows.Forms.Padding(4);
 			this.cbTipoAg.Name = "cbTipoAg";
-			this.cbTipoAg.Size = new System.Drawing.Size(218, 25);
-			this.cbTipoAg.TabIndex = 125;
+			this.cbTipoAg.Size = new System.Drawing.Size(218, 21);
+			this.cbTipoAg.TabIndex = 4;
 			// 
 			// lTipoAg
 			// 
 			this.lTipoAg.AutoSize = true;
 			this.lTipoAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lTipoAg.Location = new System.Drawing.Point(84, 299);
+			this.lTipoAg.Location = new System.Drawing.Point(66, 290);
 			this.lTipoAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lTipoAg.Name = "lTipoAg";
 			this.lTipoAg.Size = new System.Drawing.Size(37, 17);
@@ -185,53 +188,57 @@
 			// 
 			this.tbPlacaAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbPlacaAg.Enabled = false;
-			this.tbPlacaAg.Location = new System.Drawing.Point(134, 251);
+			this.tbPlacaAg.Font = new System.Drawing.Font("Segoe UI", 8F);
+			this.tbPlacaAg.Location = new System.Drawing.Point(107, 242);
 			this.tbPlacaAg.Margin = new System.Windows.Forms.Padding(4);
 			this.tbPlacaAg.MaxLength = 8;
 			this.tbPlacaAg.Name = "tbPlacaAg";
-			this.tbPlacaAg.Size = new System.Drawing.Size(218, 25);
-			this.tbPlacaAg.TabIndex = 119;
+			this.tbPlacaAg.Size = new System.Drawing.Size(218, 22);
+			this.tbPlacaAg.TabIndex = 3;
 			this.tbPlacaAg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// mtbCedulaAg
 			// 
 			this.mtbCedulaAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.mtbCedulaAg.Enabled = false;
-			this.mtbCedulaAg.Location = new System.Drawing.Point(134, 204);
+			this.mtbCedulaAg.Font = new System.Drawing.Font("Segoe UI", 8F);
+			this.mtbCedulaAg.Location = new System.Drawing.Point(107, 195);
 			this.mtbCedulaAg.Margin = new System.Windows.Forms.Padding(4);
 			this.mtbCedulaAg.Mask = "000-000000-0000L";
 			this.mtbCedulaAg.Name = "mtbCedulaAg";
-			this.mtbCedulaAg.Size = new System.Drawing.Size(218, 25);
-			this.mtbCedulaAg.TabIndex = 118;
+			this.mtbCedulaAg.Size = new System.Drawing.Size(218, 22);
+			this.mtbCedulaAg.TabIndex = 2;
 			this.mtbCedulaAg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbApellidosAg
 			// 
 			this.tbApellidosAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbApellidosAg.Enabled = false;
-			this.tbApellidosAg.Location = new System.Drawing.Point(134, 158);
+			this.tbApellidosAg.Font = new System.Drawing.Font("Segoe UI", 8F);
+			this.tbApellidosAg.Location = new System.Drawing.Point(107, 149);
 			this.tbApellidosAg.Margin = new System.Windows.Forms.Padding(4);
 			this.tbApellidosAg.Name = "tbApellidosAg";
-			this.tbApellidosAg.Size = new System.Drawing.Size(218, 25);
-			this.tbApellidosAg.TabIndex = 117;
+			this.tbApellidosAg.Size = new System.Drawing.Size(218, 22);
+			this.tbApellidosAg.TabIndex = 1;
 			this.tbApellidosAg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbNombresAg
 			// 
 			this.tbNombresAg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbNombresAg.Enabled = false;
-			this.tbNombresAg.Location = new System.Drawing.Point(134, 110);
+			this.tbNombresAg.Font = new System.Drawing.Font("Segoe UI", 8F);
+			this.tbNombresAg.Location = new System.Drawing.Point(107, 101);
 			this.tbNombresAg.Margin = new System.Windows.Forms.Padding(4);
 			this.tbNombresAg.Name = "tbNombresAg";
-			this.tbNombresAg.Size = new System.Drawing.Size(218, 25);
-			this.tbNombresAg.TabIndex = 116;
+			this.tbNombresAg.Size = new System.Drawing.Size(218, 22);
+			this.tbNombresAg.TabIndex = 0;
 			this.tbNombresAg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lPlaca
 			// 
 			this.lPlaca.AutoSize = true;
 			this.lPlaca.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lPlaca.Location = new System.Drawing.Point(84, 251);
+			this.lPlaca.Location = new System.Drawing.Point(61, 242);
 			this.lPlaca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lPlaca.Name = "lPlaca";
 			this.lPlaca.Size = new System.Drawing.Size(42, 17);
@@ -242,7 +249,7 @@
 			// 
 			this.lCedulaAg.AutoSize = true;
 			this.lCedulaAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lCedulaAg.Location = new System.Drawing.Point(74, 204);
+			this.lCedulaAg.Location = new System.Drawing.Point(51, 195);
 			this.lCedulaAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lCedulaAg.Name = "lCedulaAg";
 			this.lCedulaAg.Size = new System.Drawing.Size(52, 17);
@@ -253,7 +260,7 @@
 			// 
 			this.lApellidosAg.AutoSize = true;
 			this.lApellidosAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lApellidosAg.Location = new System.Drawing.Point(60, 158);
+			this.lApellidosAg.Location = new System.Drawing.Point(37, 149);
 			this.lApellidosAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lApellidosAg.Name = "lApellidosAg";
 			this.lApellidosAg.Size = new System.Drawing.Size(66, 17);
@@ -264,7 +271,7 @@
 			// 
 			this.lNombresAg.AutoSize = true;
 			this.lNombresAg.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lNombresAg.Location = new System.Drawing.Point(55, 110);
+			this.lNombresAg.Location = new System.Drawing.Point(32, 101);
 			this.lNombresAg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lNombresAg.Name = "lNombresAg";
 			this.lNombresAg.Size = new System.Drawing.Size(71, 17);
@@ -288,7 +295,7 @@
 			this.bExportar.Margin = new System.Windows.Forms.Padding(4);
 			this.bExportar.Name = "bExportar";
 			this.bExportar.Size = new System.Drawing.Size(145, 35);
-			this.bExportar.TabIndex = 131;
+			this.bExportar.TabIndex = 8;
 			this.bExportar.Text = "Exportar";
 			this.bExportar.UseVisualStyleBackColor = true;
 			// 
@@ -309,7 +316,6 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(807, 507);
-			this.Controls.Add(this.pbCodigoQR);
 			this.Controls.Add(this.bExportar);
 			this.Controls.Add(this.lQrGenerado);
 			this.Controls.Add(this.panel1);
@@ -330,8 +336,9 @@
 			this.Controls.Add(this.bGuardar);
 			this.Controls.Add(this.panelArribaSignInPerReg);
 			this.Controls.Add(this.panelAbajoSignInPerReg);
+			this.Controls.Add(this.pbCodigoQR);
 			this.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FRMEditarRegistroQR";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

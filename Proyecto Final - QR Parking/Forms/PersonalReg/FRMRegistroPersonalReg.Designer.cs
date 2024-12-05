@@ -62,10 +62,10 @@
 			this.bRegistrarseSignInPerReg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.bRegistrarseSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
 			this.bRegistrarseSignInPerReg.Location = new System.Drawing.Point(866, 438);
-			this.bRegistrarseSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.bRegistrarseSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.bRegistrarseSignInPerReg.Name = "bRegistrarseSignInPerReg";
 			this.bRegistrarseSignInPerReg.Size = new System.Drawing.Size(154, 50);
-			this.bRegistrarseSignInPerReg.TabIndex = 59;
+			this.bRegistrarseSignInPerReg.TabIndex = 8;
 			this.bRegistrarseSignInPerReg.Text = "Registrarse";
 			this.bRegistrarseSignInPerReg.UseVisualStyleBackColor = false;
 			this.bRegistrarseSignInPerReg.Click += new System.EventHandler(this.bRegistrarseSignInPerReg_Click);
@@ -87,11 +87,11 @@
 			this.cbVerOcultarSignInPerReg.AutoSize = true;
 			this.cbVerOcultarSignInPerReg.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.cbVerOcultarSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
-			this.cbVerOcultarSignInPerReg.Location = new System.Drawing.Point(1060, 347);
-			this.cbVerOcultarSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbVerOcultarSignInPerReg.Location = new System.Drawing.Point(1060, 345);
+			this.cbVerOcultarSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.cbVerOcultarSignInPerReg.Name = "cbVerOcultarSignInPerReg";
 			this.cbVerOcultarSignInPerReg.Size = new System.Drawing.Size(42, 17);
-			this.cbVerOcultarSignInPerReg.TabIndex = 56;
+			this.cbVerOcultarSignInPerReg.TabIndex = 5;
 			this.cbVerOcultarSignInPerReg.Text = "Ver";
 			this.cbVerOcultarSignInPerReg.UseVisualStyleBackColor = true;
 			this.cbVerOcultarSignInPerReg.CheckedChanged += new System.EventHandler(this.cbVerOcultarSignInPerReg_CheckedChanged);
@@ -101,11 +101,11 @@
 			this.cbVerOcultarConfirmarSignInPerReg.AutoSize = true;
 			this.cbVerOcultarConfirmarSignInPerReg.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.cbVerOcultarConfirmarSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
-			this.cbVerOcultarConfirmarSignInPerReg.Location = new System.Drawing.Point(1060, 396);
-			this.cbVerOcultarConfirmarSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbVerOcultarConfirmarSignInPerReg.Location = new System.Drawing.Point(1060, 395);
+			this.cbVerOcultarConfirmarSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.cbVerOcultarConfirmarSignInPerReg.Name = "cbVerOcultarConfirmarSignInPerReg";
 			this.cbVerOcultarConfirmarSignInPerReg.Size = new System.Drawing.Size(42, 17);
-			this.cbVerOcultarConfirmarSignInPerReg.TabIndex = 55;
+			this.cbVerOcultarConfirmarSignInPerReg.TabIndex = 7;
 			this.cbVerOcultarConfirmarSignInPerReg.Text = "Ver";
 			this.cbVerOcultarConfirmarSignInPerReg.UseVisualStyleBackColor = true;
 			this.cbVerOcultarConfirmarSignInPerReg.CheckedChanged += new System.EventHandler(this.cbVerOcultarConfirmarSignInPerReg_CheckedChanged);
@@ -115,10 +115,10 @@
 			this.mtbConfirmarContraSignInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.mtbConfirmarContraSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
 			this.mtbConfirmarContraSignInPerReg.Location = new System.Drawing.Point(835, 391);
-			this.mtbConfirmarContraSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.mtbConfirmarContraSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.mtbConfirmarContraSignInPerReg.Name = "mtbConfirmarContraSignInPerReg";
 			this.mtbConfirmarContraSignInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.mtbConfirmarContraSignInPerReg.TabIndex = 54;
+			this.mtbConfirmarContraSignInPerReg.TabIndex = 6;
 			this.mtbConfirmarContraSignInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// mtbContraSignInPerReg
@@ -126,10 +126,10 @@
 			this.mtbContraSignInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.mtbContraSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
 			this.mtbContraSignInPerReg.Location = new System.Drawing.Point(835, 341);
-			this.mtbContraSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.mtbContraSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.mtbContraSignInPerReg.Name = "mtbContraSignInPerReg";
 			this.mtbContraSignInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.mtbContraSignInPerReg.TabIndex = 45;
+			this.mtbContraSignInPerReg.TabIndex = 4;
 			this.mtbContraSignInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbCorreoSignInPerReg
@@ -137,10 +137,10 @@
 			this.tbCorreoSignInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbCorreoSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
 			this.tbCorreoSignInPerReg.Location = new System.Drawing.Point(835, 294);
-			this.tbCorreoSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbCorreoSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.tbCorreoSignInPerReg.Name = "tbCorreoSignInPerReg";
 			this.tbCorreoSignInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.tbCorreoSignInPerReg.TabIndex = 44;
+			this.tbCorreoSignInPerReg.TabIndex = 3;
 			this.tbCorreoSignInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// mtbCedulaSignInPerReg
@@ -148,11 +148,11 @@
 			this.mtbCedulaSignInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.mtbCedulaSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
 			this.mtbCedulaSignInPerReg.Location = new System.Drawing.Point(835, 247);
-			this.mtbCedulaSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.mtbCedulaSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.mtbCedulaSignInPerReg.Mask = "000-000000-0000L";
 			this.mtbCedulaSignInPerReg.Name = "mtbCedulaSignInPerReg";
 			this.mtbCedulaSignInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.mtbCedulaSignInPerReg.TabIndex = 43;
+			this.mtbCedulaSignInPerReg.TabIndex = 2;
 			this.mtbCedulaSignInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbApellidosSignInPerReg
@@ -160,10 +160,10 @@
 			this.tbApellidosSignInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbApellidosSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
 			this.tbApellidosSignInPerReg.Location = new System.Drawing.Point(835, 197);
-			this.tbApellidosSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbApellidosSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.tbApellidosSignInPerReg.Name = "tbApellidosSignInPerReg";
 			this.tbApellidosSignInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.tbApellidosSignInPerReg.TabIndex = 42;
+			this.tbApellidosSignInPerReg.TabIndex = 1;
 			this.tbApellidosSignInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbNombresSignInPerReg
@@ -171,10 +171,10 @@
 			this.tbNombresSignInPerReg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbNombresSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
 			this.tbNombresSignInPerReg.Location = new System.Drawing.Point(835, 148);
-			this.tbNombresSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbNombresSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.tbNombresSignInPerReg.Name = "tbNombresSignInPerReg";
 			this.tbNombresSignInPerReg.Size = new System.Drawing.Size(218, 22);
-			this.tbNombresSignInPerReg.TabIndex = 41;
+			this.tbNombresSignInPerReg.TabIndex = 0;
 			this.tbNombresSignInPerReg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lConfirmarContrasenaSignInPerReg
@@ -248,7 +248,7 @@
 			this.panelArribaSignInPerReg.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.panelArribaSignInPerReg.Controls.Add(this.lRegistroPersonal);
 			this.panelArribaSignInPerReg.Location = new System.Drawing.Point(0, -1);
-			this.panelArribaSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelArribaSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.panelArribaSignInPerReg.Name = "panelArribaSignInPerReg";
 			this.panelArribaSignInPerReg.Size = new System.Drawing.Size(1128, 51);
 			this.panelArribaSignInPerReg.TabIndex = 47;
@@ -269,7 +269,7 @@
 			this.panelAbajoSignInPerReg.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.panelAbajoSignInPerReg.Controls.Add(this.bVolverSignInPerReg);
 			this.panelAbajoSignInPerReg.Location = new System.Drawing.Point(0, 509);
-			this.panelAbajoSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelAbajoSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.panelAbajoSignInPerReg.Name = "panelAbajoSignInPerReg";
 			this.panelAbajoSignInPerReg.Size = new System.Drawing.Size(1128, 51);
 			this.panelAbajoSignInPerReg.TabIndex = 46;
@@ -280,10 +280,10 @@
 			this.bVolverSignInPerReg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.bVolverSignInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
 			this.bVolverSignInPerReg.Location = new System.Drawing.Point(901, 9);
-			this.bVolverSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.bVolverSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.bVolverSignInPerReg.Name = "bVolverSignInPerReg";
 			this.bVolverSignInPerReg.Size = new System.Drawing.Size(88, 35);
-			this.bVolverSignInPerReg.TabIndex = 0;
+			this.bVolverSignInPerReg.TabIndex = 9;
 			this.bVolverSignInPerReg.Text = "Volver";
 			this.bVolverSignInPerReg.UseVisualStyleBackColor = true;
 			this.bVolverSignInPerReg.Click += new System.EventHandler(this.bVolverSignInPerReg_Click);
@@ -292,7 +292,7 @@
 			// 
 			this.pbSignInPerReg.Image = ((System.Drawing.Image)(resources.GetObject("pbSignInPerReg.Image")));
 			this.pbSignInPerReg.Location = new System.Drawing.Point(0, 47);
-			this.pbSignInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.pbSignInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.pbSignInPerReg.Name = "pbSignInPerReg";
 			this.pbSignInPerReg.Size = new System.Drawing.Size(641, 463);
 			this.pbSignInPerReg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -326,7 +326,7 @@
 			this.Controls.Add(this.pbSignInPerReg);
 			this.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.Name = "FRMRegistroPersonalReg";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
