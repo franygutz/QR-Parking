@@ -41,10 +41,11 @@
 			this.pbLogoQRLogInSeg = new System.Windows.Forms.PictureBox();
 			this.lBienvenidoPerReg = new System.Windows.Forms.Label();
 			this.dgvRegistros = new System.Windows.Forms.DataGridView();
-			this.Ver = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.bAgregar = new System.Windows.Forms.Button();
 			this.lDatos = new System.Windows.Forms.Label();
+			this.Ver = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
+			this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.msPerRegHub.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbLogoQRLogInSeg)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).BeginInit();
@@ -141,7 +142,8 @@
 			this.dgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvRegistros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Ver,
-            this.Editar});
+            this.Editar,
+            this.Eliminar});
 			this.dgvRegistros.Cursor = System.Windows.Forms.Cursors.Default;
 			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
 			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -162,31 +164,17 @@
 			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.dgvRegistros.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			this.dgvRegistros.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.dgvRegistros.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Empty;
+			this.dgvRegistros.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Empty;
+			this.dgvRegistros.RowTemplate.DefaultCellStyle.NullValue = " ";
 			this.dgvRegistros.RowTemplate.Height = 30;
+			this.dgvRegistros.RowTemplate.ReadOnly = true;
+			this.dgvRegistros.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistros.ShowRowErrors = false;
 			this.dgvRegistros.Size = new System.Drawing.Size(957, 409);
 			this.dgvRegistros.TabIndex = 72;
 			this.dgvRegistros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistros_CellContentClick);
-			// 
-			// Ver
-			// 
-			this.Ver.FillWeight = 30F;
-			this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Ver.HeaderText = "Ver";
-			this.Ver.Name = "Ver";
-			this.Ver.ReadOnly = true;
-			this.Ver.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-			this.Ver.Text = "Ver";
-			this.Ver.UseColumnTextForButtonValue = true;
-			// 
-			// Editar
-			// 
-			this.Editar.FillWeight = 50F;
-			this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Editar.HeaderText = "Editar";
-			this.Editar.Name = "Editar";
-			this.Editar.ReadOnly = true;
-			this.Editar.Text = "Editar";
-			this.Editar.UseColumnTextForButtonValue = true;
 			// 
 			// bAgregar
 			// 
@@ -210,6 +198,40 @@
 			this.lDatos.Size = new System.Drawing.Size(189, 30);
 			this.lDatos.TabIndex = 74;
 			this.lDatos.Text = "Datos Registrados";
+			// 
+			// Ver
+			// 
+			this.Ver.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Ver.FillWeight = 30F;
+			this.Ver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.Ver.HeaderText = "Ver";
+			this.Ver.Name = "Ver";
+			this.Ver.ReadOnly = true;
+			this.Ver.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			this.Ver.Text = "Ver";
+			this.Ver.UseColumnTextForButtonValue = true;
+			// 
+			// Editar
+			// 
+			this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Editar.FillWeight = 50F;
+			this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.Editar.HeaderText = "Editar";
+			this.Editar.Name = "Editar";
+			this.Editar.ReadOnly = true;
+			this.Editar.Text = "Editar";
+			this.Editar.UseColumnTextForButtonValue = true;
+			// 
+			// Eliminar
+			// 
+			this.Eliminar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.Eliminar.HeaderText = "Eliminar";
+			this.Eliminar.Name = "Eliminar";
+			this.Eliminar.ReadOnly = true;
+			this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			this.Eliminar.Text = "Eliminar";
+			this.Eliminar.UseColumnTextForButtonValue = true;
 			// 
 			// FRMPerRegHub
 			// 
@@ -251,5 +273,6 @@
 		private System.Windows.Forms.Label lDatos;
 		private System.Windows.Forms.DataGridViewButtonColumn Ver;
 		private System.Windows.Forms.DataGridViewButtonColumn Editar;
+		private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
 	}
 }

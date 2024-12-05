@@ -109,6 +109,57 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 
 					editarForm.ShowDialog();
 				}
+
+				else if (e.ColumnIndex == dgvRegistros.Columns["Eliminar"].Index)
+				{
+					var placaQRCell = dgvRegistros.Rows[e.RowIndex].Cells["PlacaQR"];
+					if (placaQRCell.Value == null)
+					{
+						MessageBox.Show(
+							"¡No se encontró el registro a eliminar!",
+							"Error de Registro",
+							MessageBoxButtons.OK,
+							MessageBoxIcon.Error
+						);
+
+						return;
+					}
+
+					string placaQR = placaQRCell.Value.ToString();
+					DialogResult resultado = MessageBox.Show(
+						"¿Está seguro que desea eliminar este registro?",
+						"Confirmación",
+						MessageBoxButtons.YesNo,
+						MessageBoxIcon.Question
+					);
+
+					if (resultado == DialogResult.Yes)
+					{
+						bool eliminado = TablaRegistrosQR.GetInstancia().EliminarRegistro(placaQR);
+
+						if (!eliminado)
+						{
+							MessageBox.Show(
+								"No se pudo encontrar el registro a eliminar.",
+								"Error",
+								MessageBoxButtons.OK,
+								MessageBoxIcon.Error
+							);
+
+							return;
+						}
+						
+						dgvRegistros.DataSource = null;
+						dgvRegistros.DataSource = TablaRegistrosQR.GetInstancia().GetTabla();
+
+						MessageBox.Show(
+							"¡Registro eliminado exitosamente!",
+							"Éxito",
+							MessageBoxButtons.OK,
+							MessageBoxIcon.Information
+						);
+					}
+				}
 			}
 
 			catch (Exception ex)
