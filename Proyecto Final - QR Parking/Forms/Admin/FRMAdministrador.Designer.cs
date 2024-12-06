@@ -58,7 +58,7 @@
 			this.bIniciarSesionAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.bIniciarSesionAdmin.Name = "bIniciarSesionAdmin";
 			this.bIniciarSesionAdmin.Size = new System.Drawing.Size(154, 50);
-			this.bIniciarSesionAdmin.TabIndex = 86;
+			this.bIniciarSesionAdmin.TabIndex = 3;
 			this.bIniciarSesionAdmin.Text = "Inicia Sesión";
 			this.bIniciarSesionAdmin.UseVisualStyleBackColor = false;
 			this.bIniciarSesionAdmin.Click += new System.EventHandler(this.bIniciarSesionPerReg_Click);
@@ -82,7 +82,7 @@
 			this.mtbContraAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.mtbContraAdmin.Name = "mtbContraAdmin";
 			this.mtbContraAdmin.Size = new System.Drawing.Size(218, 22);
-			this.mtbContraAdmin.TabIndex = 80;
+			this.mtbContraAdmin.TabIndex = 1;
 			// 
 			// tbCorreoAdmin
 			// 
@@ -92,7 +92,7 @@
 			this.tbCorreoAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.tbCorreoAdmin.Name = "tbCorreoAdmin";
 			this.tbCorreoAdmin.Size = new System.Drawing.Size(218, 22);
-			this.tbCorreoAdmin.TabIndex = 79;
+			this.tbCorreoAdmin.TabIndex = 0;
 			// 
 			// lContrasenaLogInPerReg
 			// 
@@ -156,7 +156,7 @@
 			this.bVolverLogInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.bVolverLogInPerReg.Name = "bVolverLogInPerReg";
 			this.bVolverLogInPerReg.Size = new System.Drawing.Size(88, 35);
-			this.bVolverLogInPerReg.TabIndex = 0;
+			this.bVolverLogInPerReg.TabIndex = 4;
 			this.bVolverLogInPerReg.Text = "Volver";
 			this.bVolverLogInPerReg.UseVisualStyleBackColor = true;
 			this.bVolverLogInPerReg.Click += new System.EventHandler(this.bVolverLogInPerReg_Click);
@@ -193,7 +193,7 @@
 			this.cbVerOcultarLogInAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.cbVerOcultarLogInAdmin.Name = "cbVerOcultarLogInAdmin";
 			this.cbVerOcultarLogInAdmin.Size = new System.Drawing.Size(42, 17);
-			this.cbVerOcultarLogInAdmin.TabIndex = 88;
+			this.cbVerOcultarLogInAdmin.TabIndex = 2;
 			this.cbVerOcultarLogInAdmin.Text = "Ver";
 			this.cbVerOcultarLogInAdmin.UseVisualStyleBackColor = true;
 			this.cbVerOcultarLogInAdmin.CheckedChanged += new System.EventHandler(this.cbVerOcultarLogInPerReg_CheckedChanged);

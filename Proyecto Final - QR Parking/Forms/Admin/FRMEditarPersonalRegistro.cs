@@ -63,6 +63,18 @@ namespace Proyecto_Final___QR_Parking.Admin
 				return;
 			}
 
+			if (tbContra.Text.Length < 8)
+			{
+				MessageBox.Show(
+					"¡La contraseña debe tener al menos 8 caracteres!",
+					"Error de Contraseña",
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Error
+				);
+
+				return;
+			}
+
 			// Confirmar edición
 			DialogResult resp = MessageBox.Show(
 				"¿Está seguro que desea guardar estos cambios?",

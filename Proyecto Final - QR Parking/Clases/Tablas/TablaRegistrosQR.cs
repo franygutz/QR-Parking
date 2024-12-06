@@ -41,6 +41,11 @@ namespace Proyecto_Final___QR_Parking.Clases.Tablas
 				tabla.Add(registro);
 		}
 
+		public RegistroQR BuscarRegistroPlaca(string placa)
+		{
+			return tabla.FirstOrDefault(reg => reg.PlacaQR == placa);
+		}
+
 		public bool VerificarExistenciaPlaca(string placa)
 		{
 			return tabla.Exists(reg => reg.PlacaQR == placa);

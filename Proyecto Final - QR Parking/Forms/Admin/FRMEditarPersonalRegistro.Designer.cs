@@ -56,7 +56,7 @@
 			this.bVolverSignInPerReg.Margin = new System.Windows.Forms.Padding(5);
 			this.bVolverSignInPerReg.Name = "bVolverSignInPerReg";
 			this.bVolverSignInPerReg.Size = new System.Drawing.Size(126, 36);
-			this.bVolverSignInPerReg.TabIndex = 135;
+			this.bVolverSignInPerReg.TabIndex = 5;
 			this.bVolverSignInPerReg.Text = "Volver";
 			this.bVolverSignInPerReg.UseVisualStyleBackColor = true;
 			this.bVolverSignInPerReg.Click += new System.EventHandler(this.bVolverSignInPerReg_Click);
@@ -67,10 +67,9 @@
 			this.tbCorreo.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.tbCorreo.Location = new System.Drawing.Point(214, 256);
 			this.tbCorreo.Margin = new System.Windows.Forms.Padding(5);
-			this.tbCorreo.MaxLength = 8;
 			this.tbCorreo.Name = "tbCorreo";
 			this.tbCorreo.Size = new System.Drawing.Size(254, 22);
-			this.tbCorreo.TabIndex = 131;
+			this.tbCorreo.TabIndex = 2;
 			this.tbCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbApellidos
@@ -81,7 +80,7 @@
 			this.tbApellidos.Margin = new System.Windows.Forms.Padding(5);
 			this.tbApellidos.Name = "tbApellidos";
 			this.tbApellidos.Size = new System.Drawing.Size(254, 22);
-			this.tbApellidos.TabIndex = 129;
+			this.tbApellidos.TabIndex = 1;
 			this.tbApellidos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbNombres
@@ -92,7 +91,7 @@
 			this.tbNombres.Margin = new System.Windows.Forms.Padding(5);
 			this.tbNombres.Name = "tbNombres";
 			this.tbNombres.Size = new System.Drawing.Size(254, 22);
-			this.tbNombres.TabIndex = 128;
+			this.tbNombres.TabIndex = 0;
 			this.tbNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lCorreo
@@ -136,7 +135,7 @@
 			this.bGuardar.Margin = new System.Windows.Forms.Padding(5);
 			this.bGuardar.Name = "bGuardar";
 			this.bGuardar.Size = new System.Drawing.Size(126, 36);
-			this.bGuardar.TabIndex = 134;
+			this.bGuardar.TabIndex = 4;
 			this.bGuardar.Text = "Guardar";
 			this.bGuardar.UseVisualStyleBackColor = true;
 			this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);
@@ -179,10 +178,9 @@
 			this.tbContra.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.tbContra.Location = new System.Drawing.Point(214, 302);
 			this.tbContra.Margin = new System.Windows.Forms.Padding(5);
-			this.tbContra.MaxLength = 8;
 			this.tbContra.Name = "tbContra";
 			this.tbContra.Size = new System.Drawing.Size(254, 22);
-			this.tbContra.TabIndex = 144;
+			this.tbContra.TabIndex = 3;
 			this.tbContra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lContra

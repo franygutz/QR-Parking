@@ -78,7 +78,7 @@
 			this.tbContra.MaxLength = 8;
 			this.tbContra.Name = "tbContra";
 			this.tbContra.Size = new System.Drawing.Size(254, 22);
-			this.tbContra.TabIndex = 156;
+			this.tbContra.TabIndex = 4;
 			this.tbContra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lContra
@@ -101,7 +101,7 @@
 			this.tbCorreo.MaxLength = 8;
 			this.tbCorreo.Name = "tbCorreo";
 			this.tbCorreo.Size = new System.Drawing.Size(254, 22);
-			this.tbCorreo.TabIndex = 150;
+			this.tbCorreo.TabIndex = 3;
 			this.tbCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbApellidos
@@ -112,7 +112,7 @@
 			this.tbApellidos.Margin = new System.Windows.Forms.Padding(5);
 			this.tbApellidos.Name = "tbApellidos";
 			this.tbApellidos.Size = new System.Drawing.Size(254, 22);
-			this.tbApellidos.TabIndex = 149;
+			this.tbApellidos.TabIndex = 1;
 			this.tbApellidos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// tbNombres
@@ -123,7 +123,7 @@
 			this.tbNombres.Margin = new System.Windows.Forms.Padding(5);
 			this.tbNombres.Name = "tbNombres";
 			this.tbNombres.Size = new System.Drawing.Size(254, 22);
-			this.tbNombres.TabIndex = 148;
+			this.tbNombres.TabIndex = 0;
 			this.tbNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
 			// lCorreo
@@ -168,7 +168,7 @@
 			this.bVolverSignInPerReg.Margin = new System.Windows.Forms.Padding(5);
 			this.bVolverSignInPerReg.Name = "bVolverSignInPerReg";
 			this.bVolverSignInPerReg.Size = new System.Drawing.Size(126, 36);
-			this.bVolverSignInPerReg.TabIndex = 135;
+			this.bVolverSignInPerReg.TabIndex = 6;
 			this.bVolverSignInPerReg.Text = "Volver";
 			this.bVolverSignInPerReg.UseVisualStyleBackColor = true;
 			this.bVolverSignInPerReg.Click += new System.EventHandler(this.bVolverSignInPerReg_Click);
@@ -192,7 +192,7 @@
 			this.bGuardar.Margin = new System.Windows.Forms.Padding(5);
 			this.bGuardar.Name = "bGuardar";
 			this.bGuardar.Size = new System.Drawing.Size(126, 36);
-			this.bGuardar.TabIndex = 134;
+			this.bGuardar.TabIndex = 5;
 			this.bGuardar.Text = "Guardar";
 			this.bGuardar.UseVisualStyleBackColor = true;
 			this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);

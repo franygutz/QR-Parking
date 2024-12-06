@@ -29,10 +29,10 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRMPerRegHub));
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.msPerRegHub = new System.Windows.Forms.MenuStrip();
 			this.tsmiCerrarSesion = new System.Windows.Forms.ToolStripMenuItem();
 			this.pbLogoQRLogInSeg = new System.Windows.Forms.PictureBox();
@@ -43,6 +43,8 @@
 			this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.bAgregar = new System.Windows.Forms.Button();
 			this.lDatos = new System.Windows.Forms.Label();
+			this.tbPlaca = new System.Windows.Forms.TextBox();
+			this.lBuscar = new System.Windows.Forms.Label();
 			this.msPerRegHub.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbLogoQRLogInSeg)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).BeginInit();
@@ -83,7 +85,7 @@
 			this.lBienvenidoPerReg.AutoSize = true;
 			this.lBienvenidoPerReg.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
 			this.lBienvenidoPerReg.ForeColor = System.Drawing.Color.Turquoise;
-			this.lBienvenidoPerReg.Location = new System.Drawing.Point(233, 55);
+			this.lBienvenidoPerReg.Location = new System.Drawing.Point(224, 53);
 			this.lBienvenidoPerReg.Name = "lBienvenidoPerReg";
 			this.lBienvenidoPerReg.Size = new System.Drawing.Size(365, 45);
 			this.lBienvenidoPerReg.TabIndex = 72;
@@ -94,46 +96,46 @@
 			// 
 			this.dgvRegistros.AllowUserToAddRows = false;
 			this.dgvRegistros.AllowUserToDeleteRows = false;
-			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F);
-			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvRegistros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
 			this.dgvRegistros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvRegistros.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
 			this.dgvRegistros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F);
-			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvRegistros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistros.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
 			this.dgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvRegistros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Ver,
             this.Editar,
             this.Eliminar});
 			this.dgvRegistros.Cursor = System.Windows.Forms.Cursors.Default;
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F);
-			dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dgvRegistros.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dgvRegistros.DefaultCellStyle = dataGridViewCellStyle39;
 			this.dgvRegistros.Location = new System.Drawing.Point(12, 156);
 			this.dgvRegistros.Name = "dgvRegistros";
 			this.dgvRegistros.ReadOnly = true;
-			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10F);
-			dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvRegistros.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 10F);
+			dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvRegistros.RowHeadersDefaultCellStyle = dataGridViewCellStyle40;
 			this.dgvRegistros.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
 			this.dgvRegistros.RowTemplate.DefaultCellStyle.NullValue = " ";
 			this.dgvRegistros.RowTemplate.Height = 30;
@@ -182,9 +184,9 @@
 			// 
 			this.bAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bAgregar.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-			this.bAgregar.Location = new System.Drawing.Point(770, 90);
+			this.bAgregar.Location = new System.Drawing.Point(853, 111);
 			this.bAgregar.Name = "bAgregar";
-			this.bAgregar.Size = new System.Drawing.Size(199, 61);
+			this.bAgregar.Size = new System.Drawing.Size(116, 39);
 			this.bAgregar.TabIndex = 0;
 			this.bAgregar.Text = "Agregar";
 			this.bAgregar.UseVisualStyleBackColor = true;
@@ -201,12 +203,40 @@
 			this.lDatos.TabIndex = 74;
 			this.lDatos.Text = "Datos Registrados";
 			// 
+			// tbPlaca
+			// 
+			this.tbPlaca.AcceptsReturn = true;
+			this.tbPlaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.tbPlaca.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.tbPlaca.Location = new System.Drawing.Point(628, 122);
+			this.tbPlaca.Margin = new System.Windows.Forms.Padding(4);
+			this.tbPlaca.MaxLength = 8;
+			this.tbPlaca.Name = "tbPlaca";
+			this.tbPlaca.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.tbPlaca.Size = new System.Drawing.Size(194, 25);
+			this.tbPlaca.TabIndex = 1;
+			this.tbPlaca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.tbPlaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPlaca_KeyPress);
+			// 
+			// lBuscar
+			// 
+			this.lBuscar.AutoSize = true;
+			this.lBuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+			this.lBuscar.Location = new System.Drawing.Point(655, 99);
+			this.lBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lBuscar.Name = "lBuscar";
+			this.lBuscar.Size = new System.Drawing.Size(167, 19);
+			this.lBuscar.TabIndex = 134;
+			this.lBuscar.Text = "Buscar registro por placa:";
+			// 
 			// FRMPerRegHub
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(981, 577);
+			this.Controls.Add(this.tbPlaca);
+			this.Controls.Add(this.lBuscar);
 			this.Controls.Add(this.pbLogoQRLogInSeg);
 			this.Controls.Add(this.lDatos);
 			this.Controls.Add(this.lBienvenidoPerReg);
@@ -239,5 +269,7 @@
 		private System.Windows.Forms.DataGridViewButtonColumn Ver;
 		private System.Windows.Forms.DataGridViewButtonColumn Editar;
 		private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
+		private System.Windows.Forms.TextBox tbPlaca;
+		private System.Windows.Forms.Label lBuscar;
 	}
 }

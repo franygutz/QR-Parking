@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Windows.Forms;
+using Proyecto_Final___QR_Parking.Clases;
 using Proyecto_Final___QR_Parking.Clases.Tablas;
 
 
@@ -63,6 +64,10 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 		{
 			try
 			{
+				// Desactiva el dgv para evitar interactuar
+				// con el DataGridView mientras se actualiza
+				dgvRegistros.Enabled = false;
+
 				// Validar que se haya hecho clic en una celda válida
 				if (e.RowIndex < 0 || e.RowIndex >= dgvRegistros.Rows.Count)
 					return;
@@ -140,7 +145,7 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 						if (!eliminado)
 						{
 							MessageBox.Show(
-								"No se pudo encontrar el registro a eliminar.",
+								"¡No se pudo encontrar el registro a eliminar!",
 								"Error",
 								MessageBoxButtons.OK,
 								MessageBoxIcon.Error
@@ -170,6 +175,42 @@ namespace Proyecto_Final___QR_Parking.PersonalReg
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error
 				);
+			}
+
+			finally
+			{
+				dgvRegistros.Enabled = true;
+			}
+		}
+
+		private void tbPlaca_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar != (char) Keys.Enter)
+				return;
+
+			string placa = tbPlaca.Text;
+			RegistroQR registro_encontrado = TablaRegistrosQR.GetInstancia().BuscarRegistroPlaca(placa);
+
+			if (registro_encontrado == null)
+			{
+				MessageBox.Show(
+					"¡No se encontró la placa ingresada!",
+					"Error",
+					MessageBoxButtons.OK,
+					MessageBoxIcon.Error
+				);
+
+				return;
+			}
+
+			foreach (DataGridViewRow row in dgvRegistros.Rows)
+			{
+				if (row.Cells["PlacaQR"].Value != null && row.Cells["PlacaQR"].Value.ToString() == placa)
+				{
+					row.Selected = true;
+					dgvRegistros.FirstDisplayedScrollingRowIndex = row.Index;
+					break;
+				}
 			}
 		}
 	}
