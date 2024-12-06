@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Windows.Forms;
 using Proyecto_Final___QR_Parking.Clases;

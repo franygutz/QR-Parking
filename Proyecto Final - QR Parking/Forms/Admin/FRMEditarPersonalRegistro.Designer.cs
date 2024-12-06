@@ -1,4 +1,4 @@
-﻿namespace Proyecto_Final___QR_Parking.Admin
+namespace Proyecto_Final___QR_Parking.Admin
 {
 	partial class FRMEditarPersonalRegistro
 	{

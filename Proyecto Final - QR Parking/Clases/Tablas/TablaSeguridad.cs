@@ -41,6 +41,11 @@ namespace Proyecto_Final___QR_Parking.Clases.Tablas
 				tabla.Add(registro);
 		}
 
+		public Empleado BuscarPersonal(string correo)
+		{
+			return tabla.FirstOrDefault(e => e.Correo.Equals(correo, StringComparison.OrdinalIgnoreCase));
+		}
+
 		public bool EditarPersonal(Empleado personalEditado)
 		{
 			var personalOriginal = tabla.FirstOrDefault(
