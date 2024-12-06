@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A231C17D-5296-40A8-AE51-1FDA5E67820B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_Final___QR_Parking</RootNamespace>
+    <AssemblyName>Proyecto Final - QR Parking</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Empleado.cs" />
+    <Compile Include="Clases\RegistroQR.cs" />
+    <Compile Include="Clases\Tablas\TablaPersonalRegistro.cs" />
+    <Compile Include="Clases\Tablas\TablaSeguridad.cs" />
+    <Compile Include="Clases\Tablas\TablaRegistrosQR.cs" />
+    <Compile Include="Forms\Admin\FRMAdminHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMAdminHub.Designer.cs">
+      <DependentUpon>FRMAdminHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMAdministrador.Designer.cs">
+      <DependentUpon>FRMAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalRegistro.Designer.cs">
+      <DependentUpon>FRMEditarPersonalRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalSeguridad.Designer.cs">
+      <DependentUpon>FRMEditarPersonalSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRMBienvenidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRMBienvenidos.Designer.cs">
+      <DependentUpon>FRMBienvenidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMAgregarRegistroQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMAgregarRegistroQR.Designer.cs">
+      <DependentUpon>FRMAgregarRegistroQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMContraOlvidadaPerReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMContraOlvidadaPerReg.Designer.cs">
+      <DependentUpon>FRMContraOlvidadaPerReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMEditarRegistroQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMEditarRegistroQR.Designer.cs">
+      <DependentUpon>FRMEditarRegistroQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMLogInPersonalReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMLogInPersonalReg.Designer.cs">
+      <DependentUpon>FRMLogInPersonalReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMMostrarRegistroQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMMostrarRegistroQR.Designer.cs">
+      <DependentUpon>FRMMostrarRegistroQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMPerRegHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMPerRegHub.Designer.cs">
+      <DependentUpon>FRMPerRegHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMRegistroPersonalReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonalReg\FRMRegistroPersonalReg.Designer.cs">
+      <DependentUpon>FRMRegistroPersonalReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMContraOlvidadaSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMContraOlvidadaSeguridad.Designer.cs">
+      <DependentUpon>FRMContraOlvidadaSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMLogInSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMLogInSeguridad.Designer.cs">
+      <DependentUpon>FRMLogInSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMRegistroSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMRegistroSeguridad.Designer.cs">
+      <DependentUpon>FRMRegistroSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMSeguridadHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Seguridad\FRMSeguridadHub.Designer.cs">
+      <DependentUpon>FRMSeguridadHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilidades.cs" />
+    <EmbeddedResource Include="Forms\Admin\FRMAdminHub.resx">
+      <DependentUpon>FRMAdminHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\FRMAdministrador.resx">
+      <DependentUpon>FRMAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\FRMEditarPersonalRegistro.resx">
+      <DependentUpon>FRMEditarPersonalRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\FRMEditarPersonalSeguridad.resx">
+      <DependentUpon>FRMEditarPersonalSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRMBienvenidos.resx">
+      <DependentUpon>FRMBienvenidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalReg\FRMAgregarRegistroQR.resx">
+      <DependentUpon>FRMAgregarRegistroQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalReg\FRMContraOlvidadaPerReg.resx">
+      <DependentUpon>FRMContraOlvidadaPerReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalReg\FRMEditarRegistroQR.resx">
+      <DependentUpon>FRMEditarRegistroQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalReg\FRMLogInPersonalReg.resx">
+      <DependentUpon>FRMLogInPersonalReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalReg\FRMMostrarRegistroQR.resx">
+      <DependentUpon>FRMMostrarRegistroQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalReg\FRMPerRegHub.resx">
+      <DependentUpon>FRMPerRegHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonalReg\FRMRegistroPersonalReg.resx">
+      <DependentUpon>FRMRegistroPersonalReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seguridad\FRMContraOlvidadaSeguridad.resx">
+      <DependentUpon>FRMContraOlvidadaSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seguridad\FRMLogInSeguridad.resx">
+      <DependentUpon>FRMLogInSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seguridad\FRMRegistroSeguridad.resx">
+      <DependentUpon>FRMRegistroSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Seguridad\FRMSeguridadHub.resx">
+      <DependentUpon>FRMSeguridadHub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\logo.jpg" />
+    <Content Include="Assets\sobre-nosotros.png" />
+    <Content Include="Assets\uam.jpg" />
+    <Content Include="Assets\uam2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
