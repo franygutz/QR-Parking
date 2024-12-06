@@ -17,7 +17,7 @@ namespace Proyecto_Final___QR_Parking
 
 		private void FRMBienvenidos_Load(object sender, EventArgs e)
 		{
-			TablaPersonalSeguridad.GetInstancia().CargarPersonal();
+
 		}
 
 		private void tsmiSeguridadUamSignIn_Click(object sender, EventArgs e)

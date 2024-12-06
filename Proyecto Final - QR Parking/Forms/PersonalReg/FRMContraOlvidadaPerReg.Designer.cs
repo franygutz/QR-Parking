@@ -77,18 +77,20 @@
 			this.bAceptar.TabIndex = 1;
 			this.bAceptar.Text = "Aceptar";
 			this.bAceptar.UseVisualStyleBackColor = true;
+			this.bAceptar.Click += new System.EventHandler(this.bAceptar_Click);
 			// 
 			// bIrGmail
 			// 
 			this.bIrGmail.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.bIrGmail.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.bIrGmail.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-			this.bIrGmail.Location = new System.Drawing.Point(498, 299);
+			this.bIrGmail.Location = new System.Drawing.Point(503, 299);
 			this.bIrGmail.Name = "bIrGmail";
 			this.bIrGmail.Size = new System.Drawing.Size(123, 50);
 			this.bIrGmail.TabIndex = 3;
 			this.bIrGmail.Text = "Ir a Gmail";
 			this.bIrGmail.UseVisualStyleBackColor = true;
+			this.bIrGmail.Click += new System.EventHandler(this.bIrGmail_Click);
 			// 
 			// bVolver
 			// 
@@ -101,6 +103,7 @@
 			this.bVolver.TabIndex = 2;
 			this.bVolver.Text = "Volver";
 			this.bVolver.UseVisualStyleBackColor = true;
+			this.bVolver.Click += new System.EventHandler(this.bVolver_Click);
 			// 
 			// lIndicacion
 			// 
