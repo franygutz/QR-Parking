@@ -312,9 +312,10 @@
 			this.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
 			this.Name = "FRMMostrarRegistroQR";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FRMMostrarRegistroQR";
+			this.Text = "QR Parking | Personal Registro | Mostrar Registro QR";
 			this.Load += new System.EventHandler(this.FRMMostrarRegistroQR_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pbCodigoQR)).EndInit();
 			this.panelArribaSignInPerReg.ResumeLayout(false);

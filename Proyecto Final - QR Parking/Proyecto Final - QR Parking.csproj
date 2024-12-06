@@ -78,6 +78,18 @@
     <Compile Include="Forms\Admin\FRMAdministrador.Designer.cs">
       <DependentUpon>FRMAdministrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalRegistro.Designer.cs">
+      <DependentUpon>FRMEditarPersonalRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\FRMEditarPersonalSeguridad.Designer.cs">
+      <DependentUpon>FRMEditarPersonalSeguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FRMBienvenidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +171,12 @@
     <EmbeddedResource Include="Forms\Admin\FRMAdministrador.resx">
       <DependentUpon>FRMAdministrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\FRMEditarPersonalRegistro.resx">
+      <DependentUpon>FRMEditarPersonalRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\FRMEditarPersonalSeguridad.resx">
+      <DependentUpon>FRMEditarPersonalSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FRMBienvenidos.resx">
       <DependentUpon>FRMBienvenidos.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +188,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PersonalReg\FRMEditarRegistroQR.resx">
       <DependentUpon>FRMEditarRegistroQR.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PersonalReg\FRMLogInPersonalReg.resx">
       <DependentUpon>FRMLogInPersonalReg.cs</DependentUpon>

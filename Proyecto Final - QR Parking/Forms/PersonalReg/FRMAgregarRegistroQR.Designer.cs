@@ -347,11 +347,12 @@
 			this.Controls.Add(this.panelArribaSignInPerReg);
 			this.Controls.Add(this.panelAbajoSignInPerReg);
 			this.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.MaximizeBox = false;
 			this.Name = "FRMAgregarRegistroQR";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FRMAgregarRegistroQR";
+			this.Text = "QR Parking | Personal Registro | Agregar QR";
 			this.Load += new System.EventHandler(this.FRMAgregarRegistroQR_Load);
 			this.panelArribaSignInPerReg.ResumeLayout(false);
 			this.panelArribaSignInPerReg.PerformLayout();

@@ -36,9 +36,6 @@
 			this.tsmiIniciarSesion = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmiPersonalRegistroSignIn = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsmiPersonalRegistroLogI = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmiAyuda = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmiAcercaDe = new System.Windows.Forms.ToolStripMenuItem();
-			this.tsmiContactanos = new System.Windows.Forms.ToolStripMenuItem();
 			this.msadmin = new System.Windows.Forms.MenuStrip();
 			this.tsmiMenuAdmin = new System.Windows.Forms.ToolStripMenuItem();
 			this.msBienvenidos.SuspendLayout();
@@ -50,8 +47,7 @@
 			this.msBienvenidos.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.msBienvenidos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiSeguridadUAM,
-            this.tsmiIniciarSesion,
-            this.tsmiAyuda});
+            this.tsmiIniciarSesion});
 			this.msBienvenidos.Location = new System.Drawing.Point(0, 0);
 			this.msBienvenidos.Name = "msBienvenidos";
 			this.msBienvenidos.Size = new System.Drawing.Size(721, 29);
@@ -73,7 +69,7 @@
 			this.tsmiSeguridadUamSignIn.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.tsmiSeguridadUamSignIn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tsmiSeguridadUamSignIn.Name = "tsmiSeguridadUamSignIn";
-			this.tsmiSeguridadUamSignIn.Size = new System.Drawing.Size(157, 22);
+			this.tsmiSeguridadUamSignIn.Size = new System.Drawing.Size(180, 22);
 			this.tsmiSeguridadUamSignIn.Text = "Registrarse";
 			this.tsmiSeguridadUamSignIn.Click += new System.EventHandler(this.tsmiSeguridadUamSignIn_Click);
 			// 
@@ -82,7 +78,7 @@
 			this.tsmiSeguridadUamLogIn.BackColor = System.Drawing.Color.LightSeaGreen;
 			this.tsmiSeguridadUamLogIn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tsmiSeguridadUamLogIn.Name = "tsmiSeguridadUamLogIn";
-			this.tsmiSeguridadUamLogIn.Size = new System.Drawing.Size(157, 22);
+			this.tsmiSeguridadUamLogIn.Size = new System.Drawing.Size(180, 22);
 			this.tsmiSeguridadUamLogIn.Text = "Iniciar Sesión";
 			this.tsmiSeguridadUamLogIn.Click += new System.EventHandler(this.tsmiSeguridadUamLogIn_Click);
 			// 
@@ -101,7 +97,7 @@
 			this.tsmiPersonalRegistroSignIn.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.tsmiPersonalRegistroSignIn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tsmiPersonalRegistroSignIn.Name = "tsmiPersonalRegistroSignIn";
-			this.tsmiPersonalRegistroSignIn.Size = new System.Drawing.Size(157, 22);
+			this.tsmiPersonalRegistroSignIn.Size = new System.Drawing.Size(180, 22);
 			this.tsmiPersonalRegistroSignIn.Text = "Registrarse";
 			this.tsmiPersonalRegistroSignIn.Click += new System.EventHandler(this.tsmiPersonalRegistroSignIn_Click);
 			// 
@@ -110,54 +106,28 @@
 			this.tsmiPersonalRegistroLogI.BackColor = System.Drawing.Color.LightSeaGreen;
 			this.tsmiPersonalRegistroLogI.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tsmiPersonalRegistroLogI.Name = "tsmiPersonalRegistroLogI";
-			this.tsmiPersonalRegistroLogI.Size = new System.Drawing.Size(157, 22);
+			this.tsmiPersonalRegistroLogI.Size = new System.Drawing.Size(180, 22);
 			this.tsmiPersonalRegistroLogI.Text = "Iniciar Sesión";
 			this.tsmiPersonalRegistroLogI.Click += new System.EventHandler(this.tsmiPersonalRegistroLogI_Click);
 			// 
-			// tsmiAyuda
-			// 
-			this.tsmiAyuda.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiAcercaDe,
-            this.tsmiContactanos});
-			this.tsmiAyuda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmiAyuda.Name = "tsmiAyuda";
-			this.tsmiAyuda.Size = new System.Drawing.Size(71, 25);
-			this.tsmiAyuda.Text = "Ayuda";
-			// 
-			// tsmiAcercaDe
-			// 
-			this.tsmiAcercaDe.BackColor = System.Drawing.Color.MediumTurquoise;
-			this.tsmiAcercaDe.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmiAcercaDe.Name = "tsmiAcercaDe";
-			this.tsmiAcercaDe.Size = new System.Drawing.Size(154, 22);
-			this.tsmiAcercaDe.Text = "Acerca de...";
-			// 
-			// tsmiContactanos
-			// 
-			this.tsmiContactanos.BackColor = System.Drawing.Color.LightSeaGreen;
-			this.tsmiContactanos.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.tsmiContactanos.Name = "tsmiContactanos";
-			this.tsmiContactanos.Size = new System.Drawing.Size(154, 22);
-			this.tsmiContactanos.Text = "Contactanos";
-			// 
 			// msadmin
 			// 
-			this.msadmin.BackColor = System.Drawing.Color.White;
+			this.msadmin.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.msadmin.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.msadmin.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiMenuAdmin});
-			this.msadmin.Location = new System.Drawing.Point(0, 402);
+			this.msadmin.Location = new System.Drawing.Point(0, 398);
 			this.msadmin.Name = "msadmin";
 			this.msadmin.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.msadmin.Size = new System.Drawing.Size(721, 25);
+			this.msadmin.Size = new System.Drawing.Size(721, 29);
 			this.msadmin.TabIndex = 5;
 			this.msadmin.Text = "menuStrip1";
 			// 
 			// tsmiMenuAdmin
 			// 
-			this.tsmiMenuAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.tsmiMenuAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
 			this.tsmiMenuAdmin.Name = "tsmiMenuAdmin";
-			this.tsmiMenuAdmin.Size = new System.Drawing.Size(146, 21);
+			this.tsmiMenuAdmin.Size = new System.Drawing.Size(180, 25);
 			this.tsmiMenuAdmin.Text = "Menú Administrador";
 			this.tsmiMenuAdmin.Click += new System.EventHandler(this.tsmiMenuAdmin_Click);
 			// 
@@ -198,9 +168,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiIniciarSesion;
         private System.Windows.Forms.ToolStripMenuItem tsmiPersonalRegistroSignIn;
         private System.Windows.Forms.ToolStripMenuItem tsmiPersonalRegistroLogI;
-        private System.Windows.Forms.ToolStripMenuItem tsmiAyuda;
-        private System.Windows.Forms.ToolStripMenuItem tsmiAcercaDe;
-        private System.Windows.Forms.ToolStripMenuItem tsmiContactanos;
         private System.Windows.Forms.MenuStrip msadmin;
         private System.Windows.Forms.ToolStripMenuItem tsmiMenuAdmin;
     }

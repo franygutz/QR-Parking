@@ -107,13 +107,12 @@
 			this.lIndicacion.BackColor = System.Drawing.Color.White;
 			this.lIndicacion.Cursor = System.Windows.Forms.Cursors.SizeAll;
 			this.lIndicacion.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.lIndicacion.Location = new System.Drawing.Point(120, 204);
+			this.lIndicacion.Location = new System.Drawing.Point(45, 207);
 			this.lIndicacion.Name = "lIndicacion";
-			this.lIndicacion.Size = new System.Drawing.Size(395, 94);
+			this.lIndicacion.Size = new System.Drawing.Size(548, 33);
 			this.lIndicacion.TabIndex = 15;
-			this.lIndicacion.Text = "Esta opción le permite recuperar su contraseña, enviando un código de acceso a la" +
-    " dirección de correo electrónico asociada al usuario ingresado. Su contaseña es " +
-    "el código enviado.";
+			this.lIndicacion.Text = "Esta opción le permite recuperar su contraseña, enviando una solicitud al adminis" +
+    "trador.";
 			this.lIndicacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// tbUsuarioCO
@@ -146,6 +145,7 @@
 			this.ClientSize = new System.Drawing.Size(721, 427);
 			this.Controls.Add(this.panelContraolvidSeg);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.MaximizeBox = false;
 			this.Name = "FRMContraOlvidadaPerReg";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "QR Parking | Personal Registro | Contraseña Olvidada";

@@ -81,7 +81,7 @@
 			// 
 			this.lAgregarRegistro.AutoSize = true;
 			this.lAgregarRegistro.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-			this.lAgregarRegistro.Location = new System.Drawing.Point(59, 10);
+			this.lAgregarRegistro.Location = new System.Drawing.Point(136, 10);
 			this.lAgregarRegistro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lAgregarRegistro.Name = "lAgregarRegistro";
 			this.lAgregarRegistro.Size = new System.Drawing.Size(177, 32);
@@ -337,9 +337,10 @@
 			this.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
 			this.Name = "FRMEditarRegistroQR";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FRMEditarRegistroQR";
+			this.Text = "QR Parking | Personal Registro | Editar Registro QR";
 			this.Load += new System.EventHandler(this.FRMEditarRegistroQR_Load);
 			this.panelArribaSignInPerReg.ResumeLayout(false);
 			this.panelArribaSignInPerReg.PerformLayout();

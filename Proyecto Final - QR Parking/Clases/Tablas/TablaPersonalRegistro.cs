@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -38,6 +39,41 @@ namespace Proyecto_Final___QR_Parking.Clases.Tablas
 		{
 			if (registro != null)
 				tabla.Add(registro);
+		}
+
+		public bool EditarPersonal(Empleado personalEditado)
+		{
+			var personalOriginal = tabla.FirstOrDefault(
+				p => p.Cedula.Equals(
+					personalEditado.Cedula, StringComparison.OrdinalIgnoreCase
+				)
+			);
+
+			if (personalOriginal != null)
+			{
+				personalOriginal.Nombres = personalEditado.Nombres;
+				personalOriginal.Apellidos = personalEditado.Apellidos;
+				personalOriginal.Cedula = personalEditado.Cedula;
+				personalOriginal.Correo = personalEditado.Correo;
+				personalOriginal.Contra = personalEditado.Contra;
+				GuardarPersonal();
+				return true;
+			}
+
+			return false;
+		}
+
+		public bool EliminarPersonal(string cedula)
+		{
+			var personalEliminar = tabla.FirstOrDefault(r => r.Cedula.Equals(cedula));
+			if (personalEliminar != null)
+			{
+				tabla.Remove(personalEliminar);
+				GuardarPersonal();
+				return true;
+			}
+
+			return false;
 		}
 
 		public bool VerificarExistenciaCorreo(string correo)

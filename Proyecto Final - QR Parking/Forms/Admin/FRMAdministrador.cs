@@ -25,7 +25,7 @@ namespace Proyecto_Final___QR_Parking.Admin
 
 		private void bIniciarSesionPerReg_Click(object sender, EventArgs e)
 		{
-			if (tbCorreoAdmin.Text != "soyeladmin123@uam.edu.ni" || mtbContraAdmin.Text != "holamundoQR")
+			if (tbCorreoAdmin.Text != "qrparking.uam@gmail.com" || mtbContraAdmin.Text != "holamundoQR123")
 			{
 				MessageBox.Show(
 					"¡Correo o contraseña incorrect@!", 
@@ -35,7 +35,7 @@ namespace Proyecto_Final___QR_Parking.Admin
 				);
 			}
 
-			if (tbCorreoAdmin.Text == "soyeladmin123@uam.edu.ni" && mtbContraAdmin.Text == "holamundoQR")
+			if (tbCorreoAdmin.Text == "qrparking.uam@gmail.com" && mtbContraAdmin.Text == "holamundoQR123")
 			{
 				FRMAdminHub adminHub = FRMAdminHub.GetInstancia();
 				adminHub.Show();

@@ -304,6 +304,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.ClientSize = new System.Drawing.Size(1127, 558);
 			this.Controls.Add(this.bRegistrarseSignInPerReg);
 			this.Controls.Add(this.lBienvenidoSignInPerReg);
@@ -330,7 +331,7 @@
 			this.MaximizeBox = false;
 			this.Name = "FRMRegistroPersonalReg";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "QR Parking | Registro de Personal Registro ";
+			this.Text = "QR Parking | Personal Registro | Registrar Nueva Cuenta";
 			this.Load += new System.EventHandler(this.FRMRegistroPersonalRegistro_Load);
 			this.panelArribaSignInPerReg.ResumeLayout(false);
 			this.panelArribaSignInPerReg.PerformLayout();

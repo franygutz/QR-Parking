@@ -55,7 +55,7 @@
 			this.bIniciarSesionAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.bIniciarSesionAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
 			this.bIniciarSesionAdmin.Location = new System.Drawing.Point(856, 392);
-			this.bIniciarSesionAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.bIniciarSesionAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.bIniciarSesionAdmin.Name = "bIniciarSesionAdmin";
 			this.bIniciarSesionAdmin.Size = new System.Drawing.Size(154, 50);
 			this.bIniciarSesionAdmin.TabIndex = 86;
@@ -67,7 +67,7 @@
 			// 
 			this.pbLogoQRSignInSeg.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoQRSignInSeg.Image")));
 			this.pbLogoQRSignInSeg.Location = new System.Drawing.Point(774, 122);
-			this.pbLogoQRSignInSeg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.pbLogoQRSignInSeg.Margin = new System.Windows.Forms.Padding(4);
 			this.pbLogoQRSignInSeg.Name = "pbLogoQRSignInSeg";
 			this.pbLogoQRSignInSeg.Size = new System.Drawing.Size(272, 106);
 			this.pbLogoQRSignInSeg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -79,7 +79,7 @@
 			this.mtbContraAdmin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.mtbContraAdmin.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.mtbContraAdmin.Location = new System.Drawing.Point(827, 347);
-			this.mtbContraAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.mtbContraAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.mtbContraAdmin.Name = "mtbContraAdmin";
 			this.mtbContraAdmin.Size = new System.Drawing.Size(218, 22);
 			this.mtbContraAdmin.TabIndex = 80;
@@ -89,7 +89,7 @@
 			this.tbCorreoAdmin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tbCorreoAdmin.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.tbCorreoAdmin.Location = new System.Drawing.Point(827, 300);
-			this.tbCorreoAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbCorreoAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.tbCorreoAdmin.Name = "tbCorreoAdmin";
 			this.tbCorreoAdmin.Size = new System.Drawing.Size(218, 22);
 			this.tbCorreoAdmin.TabIndex = 79;
@@ -121,7 +121,7 @@
 			this.panelArribaSeguridad.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.panelArribaSeguridad.Controls.Add(this.lLogInAdmin);
 			this.panelArribaSeguridad.Location = new System.Drawing.Point(0, -1);
-			this.panelArribaSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelArribaSeguridad.Margin = new System.Windows.Forms.Padding(4);
 			this.panelArribaSeguridad.Name = "panelArribaSeguridad";
 			this.panelArribaSeguridad.Size = new System.Drawing.Size(1128, 51);
 			this.panelArribaSeguridad.TabIndex = 82;
@@ -142,7 +142,7 @@
 			this.panelAbajoSeguridad.BackColor = System.Drawing.Color.MediumTurquoise;
 			this.panelAbajoSeguridad.Controls.Add(this.bVolverLogInPerReg);
 			this.panelAbajoSeguridad.Location = new System.Drawing.Point(0, 509);
-			this.panelAbajoSeguridad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.panelAbajoSeguridad.Margin = new System.Windows.Forms.Padding(4);
 			this.panelAbajoSeguridad.Name = "panelAbajoSeguridad";
 			this.panelAbajoSeguridad.Size = new System.Drawing.Size(1128, 51);
 			this.panelAbajoSeguridad.TabIndex = 81;
@@ -153,7 +153,7 @@
 			this.bVolverLogInPerReg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.bVolverLogInPerReg.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
 			this.bVolverLogInPerReg.Location = new System.Drawing.Point(889, 8);
-			this.bVolverLogInPerReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.bVolverLogInPerReg.Margin = new System.Windows.Forms.Padding(4);
 			this.bVolverLogInPerReg.Name = "bVolverLogInPerReg";
 			this.bVolverLogInPerReg.Size = new System.Drawing.Size(88, 35);
 			this.bVolverLogInPerReg.TabIndex = 0;
@@ -165,7 +165,7 @@
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(0, 50);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(682, 463);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -177,7 +177,7 @@
 			this.lIndicacion.AutoSize = true;
 			this.lIndicacion.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
 			this.lIndicacion.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.lIndicacion.Location = new System.Drawing.Point(762, 232);
+			this.lIndicacion.Location = new System.Drawing.Point(762, 236);
 			this.lIndicacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.lIndicacion.Name = "lIndicacion";
 			this.lIndicacion.Size = new System.Drawing.Size(294, 30);
@@ -190,7 +190,7 @@
 			this.cbVerOcultarLogInAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.cbVerOcultarLogInAdmin.Font = new System.Drawing.Font("Segoe UI", 8F);
 			this.cbVerOcultarLogInAdmin.Location = new System.Drawing.Point(1053, 352);
-			this.cbVerOcultarLogInAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbVerOcultarLogInAdmin.Margin = new System.Windows.Forms.Padding(4);
 			this.cbVerOcultarLogInAdmin.Name = "cbVerOcultarLogInAdmin";
 			this.cbVerOcultarLogInAdmin.Size = new System.Drawing.Size(42, 17);
 			this.cbVerOcultarLogInAdmin.TabIndex = 88;
@@ -217,7 +217,8 @@
 			this.Controls.Add(this.pictureBox1);
 			this.Font = new System.Drawing.Font("Segoe UI", 10F);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
 			this.Name = "FRMAdministrador";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "QR Parking | Administrador";

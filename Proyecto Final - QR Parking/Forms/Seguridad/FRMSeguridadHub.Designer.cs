@@ -195,6 +195,7 @@
 			this.Controls.Add(this.pbEscanea);
 			this.Controls.Add(this.panelAbajoSeguridad);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.MaximizeBox = false;
 			this.Name = "FRMSeguridadHub";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "QR Parking | Seguridad";
